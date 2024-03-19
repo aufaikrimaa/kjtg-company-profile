@@ -23,17 +23,17 @@ function Navbar() {
   }, []);
   return (
     <>
-      <div ref={navbarRef} className="navbar fixed z-10">
-        <div className="container flex px-6 py-2 justify-between font-bold text-white">
+      <div ref={navbarRef} className="navbar flex fixed z-10">
+        <div className="container flex px-6 py-2 justify-between font-bold text-white self-center">
           <div className="logo">
             <div className="flex ">
               <img src={logo} alt="" className="w-8 h-auto " />
-              <div className="text-2xl self-center ml-2">
+              <div className="text-3xl self-center ml-2">
                 Dialz Tour Adventure
               </div>
             </div>
           </div>
-          <div className="nav self-center">
+          <div className="nav self-center text-2xl">
             <Link to="/" className="mr-4">
               Beranda
             </Link>
