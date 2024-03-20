@@ -2,7 +2,7 @@ import imgUrl from "../data/photoData";
 import { Autoplay, EffectCoverflow } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "./swipe-photos.css";
+import "../css/swipe-photos.css";
 
 function SwipePhotos() {
   return (
