@@ -9,3 +9,31 @@
   height: 5rem;
   background-color: #0f0f0f;
 }
+
+.menu {
+  padding-bottom: 4px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.menu.active {
+  color: #e1d29b;
+}
+
+.menu::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #e1d29b;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom center;
+  transition: transform 0.3s ease;
+}
+
+.menu:hover::before,
+.menu.active::before {
+  transform: scaleX(1);
+}

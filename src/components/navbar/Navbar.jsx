@@ -1,10 +1,13 @@
-import { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/images/logo-dialz.png";
 import "./navbar.css";
 
 function Navbar() {
   const navbarRef = useRef(null);
+  const location = useLocation();
+  const [activeNav, setActiveNav] = useState(location.pathname);
+
   useEffect(() => {
     const shrinkNavbar = () => {
       if (
@@ -21,26 +24,49 @@ function Navbar() {
       window.removeEventListener("scroll", shrinkNavbar);
     };
   }, []);
+
+  const handleNavChange = (nav) => {
+    setActiveNav(nav);
+  };
+
   return (
     <>
       <div ref={navbarRef} className="navbar flex fixed z-10">
         <div className="container flex px-6 py-2 justify-between font-bold text-white self-center">
           <div className="logo">
-            <div className="flex ">
-              <img src={logo} alt="" className="w-8 h-auto " />
-              <div className="text-3xl self-center ml-2">
-                Dialz Tour Adventure
+            <Link to="/">
+              <div className="flex ">
+                <img src={logo} alt="" className="w-8 h-auto " />
+                <div className="text-3xl self-center ml-3">
+                  Dialz Tour Adventure
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
-          <div className="nav self-center text-2xl">
-            <Link to="/" className="mr-4">
+          <div className="self-center text-xl font-semibold">
+            <Link
+              to="/"
+              className={`menu mr-4 ${activeNav === "/" ? "active" : ""}`}
+              onClick={() => handleNavChange("/")}
+            >
               Beranda
             </Link>
-            <Link to="/" className="mr-4">
+            <Link
+              to="/packs"
+              className={`menu mr-4 ${activeNav === "/packs" ? "active" : ""}`}
+              onClick={() => handleNavChange("/packs")}
+            >
               Paket Wisata
             </Link>
-            <Link to="/">Galeri</Link>
+            <Link
+              to="/gallery"
+              className={`menu mr-4 ${
+                activeNav === "/gallery" ? "active" : ""
+              }`}
+              onClick={() => handleNavChange("/gallery")}
+            >
+              Galeri
+            </Link>
           </div>
         </div>
       </div>
