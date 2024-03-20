@@ -8,10 +8,10 @@ function Hero() {
           <div className="px-16">
             <div>
               <div className="text-5xl font-bold mb-4">
-                Komunitas <span className="text-[#e1d29b]">Jeep</span>
+                Komunitas <span className="text-[#FFD278]">Jeep</span>
               </div>
               <div className="text-6xl font-bold mb-4">
-                <span className="text-[#e1d29b]">Tour</span> Galunggung
+                <span className="text-[#FFD278]">Tour</span> Galunggung
               </div>
               <div className="text-2xl font-medium leading-9">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do

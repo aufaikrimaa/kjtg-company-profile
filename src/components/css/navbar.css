@@ -17,7 +17,7 @@
 }
 
 .menu.active {
-  color: #e1d29b;
+  color: #ffd278;
 }
 
 .menu::before {
@@ -25,7 +25,7 @@
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #e1d29b;
+  background-color: #ffd278;
   bottom: 0;
   left: 0;
   transform: scaleX(0);
