@@ -1,7 +1,7 @@
-import Hero from "../components/hero/Hero";
-import Navbar from "../components/navbar/Navbar";
-import SwipePhotos from "../components/swipe-photos/SwipePhotos";
-import WhyUs from "../components/why-us/WhyUs";
+import Hero from "../components/Hero";
+import Navbar from "../components/Navbar";
+import SwipePhotos from "../components/SwipePhotos";
+import WhyUs from "../components/WhyUs";
 
 function Home() {
   return (

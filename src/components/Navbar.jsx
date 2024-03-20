@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../assets/images/logo-dialz.png";
-import "../css/navbar.css";
+import logo from "../assets/images/logo-galunggung.png";
+import "./css/navbar.css";
 
 function Navbar() {
   const navbarRef = useRef(null);
@@ -37,9 +37,7 @@ function Navbar() {
             <Link to="/">
               <div className="flex ">
                 <img src={logo} alt="" className="w-8 h-auto " />
-                <div className="text-3xl self-center ml-3">
-                  Dialz Tour Adventure
-                </div>
+                <div className="text-3xl self-center ml-3">KTJG</div>
               </div>
             </Link>
           </div>

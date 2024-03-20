@@ -3,6 +3,29 @@
   height: 80vh;
 }
 
-.opacity-transition {
-  transition: opacity 0.3s ease; /* Tambahkan transisi opacity */
+.swiper-slide img {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.swiper-slide img.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.swiper-slide img:not(.active) {
+  opacity: 0.5;
+  transform: scale(0.8);
+}
+
+.swiper-slide-prev img,
+.swiper-slide-next img {
+  transform: scale(0.8);
+}
+
+.swiper-slide-prev img {
+  margin-right: 10px;
+}
+
+.swiper-slide-next img {
+  margin-left: 10px;
 }

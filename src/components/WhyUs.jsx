@@ -1,4 +1,4 @@
-import "../css/whyus.css";
+import "./css/whyus.css";
 
 function WhyUs() {
   return (
