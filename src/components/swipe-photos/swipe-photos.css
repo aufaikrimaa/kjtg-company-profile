@@ -1,0 +1,8 @@
+.photos {
+  background-color: #0f0f0f;
+  height: 80vh;
+}
+
+.opacity-transition {
+  transition: opacity 0.3s ease; /* Tambahkan transisi opacity */
+}
