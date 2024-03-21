@@ -21,7 +21,6 @@ const photos = [
   "https://lh3.googleusercontent.com/drive-viewer/AKGpihbsNDsAk54TpdrATaaAzfRv7g5Jou3z4UecuO5r2ib0Q9Ys8eok1FzFY5k_xeLEFKJZrYHDkzzBRdzT6fnKbiXauO0K=s1600",
   "https://lh3.googleusercontent.com/drive-viewer/AKGpihbZduKB7AyaXcelGFM1VtjIQgHnKzb1uftERZW-63KpV_Xwsc805xw4U8TzcBol25acXG7txKqFuCNaYDlz00291R-wOQ=s1600",
   "https://lh3.googleusercontent.com/drive-viewer/AKGpihYwueK_Esd6QKysJCQJJT_cEwokb4Vm0vDtzlmPgXiBjN9Aq2QdRMUL3CtbGARXCqjqD09OtJlxqCkpFdge1gErvZAkbA=s1600",
-  "https://lh3.googleusercontent.com/drive-viewer/AKGpihYWC1_TaCDIyB2-SQ7c7x-oKHP1boXY5fXpY20K5IB2RuguI9BuiwGRpdpwH4KfqXX0iLcJTd5YBmC1fmfUV4VHmQuVmw=s1600",
   "https://lh3.googleusercontent.com/drive-viewer/AKGpihYqwpiE3wmssVWdsPtFHta1agNBMAiq4Ey2ziQMGEQGTQY80kVsr3Nzx0e_b7NxO1YZdCHxgUQXM0aQChHGTeYBYaTe=s1600",
   "https://lh3.googleusercontent.com/drive-viewer/AKGpihZxl6lRf1ROYBEPx_jMghG2JBWP6a8esRf7U6MPY6P_bxgYRCAN6vDUmFHE8EUn8S81TBvc5A4O4Rj31moEhmGcgycAUw=s1600",
   "https://lh3.googleusercontent.com/drive-viewer/AKGpihbxTeC9odOFXPRv6PnW1rnRMsTVN3H2VSVrhm4VwOBakus-OI95fnRP7er7wIEbWbb6OroBfYNgfEysQbMNZa7zSlzSjg=s1600",
@@ -55,6 +54,7 @@ const photos = [
   "https://lh3.googleusercontent.com/drive-viewer/AKGpihZD5q2Nt57QtieHY8_8jfgNIY6CFwJrIu6IOAm_HP0Kfh6KYz3yncSgcPLzRfdfMP7vshc-SBmV62eQSxUIS-qH7aR1=s1600",
   "https://lh3.googleusercontent.com/drive-viewer/AKGpihYVV_I2AbOnnJBAdaVVWfGnf3JHjcox7Cq6--a_5l7v0mpEeLvooPUxOu_ZxbS0Nwl8hPv3ZBLTjNtN-o8mCmu7c4LUCg=s1600",
   "https://lh3.googleusercontent.com/drive-viewer/AKGpihbW2WoQzrsy4HTiCi2CkCGxh29y9xNVfg6mE2EZbw-xgoOcexPNhdDwYXbT0XOZh_1yT4es2pTt0VlkzJP_9JfXAyYwFw=s1600",
+  "https://lh3.googleusercontent.com/drive-viewer/AKGpihYWC1_TaCDIyB2-SQ7c7x-oKHP1boXY5fXpY20K5IB2RuguI9BuiwGRpdpwH4KfqXX0iLcJTd5YBmC1fmfUV4VHmQuVmw=s1600",
 ];
 
 export default photos;

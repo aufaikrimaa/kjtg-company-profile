@@ -11,6 +11,19 @@ function SwipePhotos() {
     firstSlide.classList.add("active");
   }, []);
 
+  const handleSlideOnChange = (swiper) => {
+    const slides = swiper.slides;
+    slides.forEach((slide, index) => {
+      const img = slide.querySelector("img");
+      if (index === swiper.activeIndex) {
+        img.style.opacity = 1;
+        img.classList.add("active");
+      } else {
+        img.style.opacity = 0.5;
+        img.classList.remove("active");
+      }
+    });
+  };
   return (
     <>
       <div className="photos flex">
@@ -23,19 +36,7 @@ function SwipePhotos() {
           loop={true}
           centeredSlides={true}
           className="swiper-photo self-center"
-          onSlideChange={(swiper) => {
-            const slides = swiper.slides;
-            slides.forEach((slide, index) => {
-              const img = slide.querySelector("img");
-              if (index === swiper.activeIndex) {
-                img.style.opacity = 1;
-                img.classList.add("active");
-              } else {
-                img.style.opacity = 0.5;
-                img.classList.remove("active");
-              }
-            });
-          }}
+          onSlideChange={handleSlideOnChange}
         >
           {imgUrl.map((img, index) => (
             <SwiperSlide key={index}>
