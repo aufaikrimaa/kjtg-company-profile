@@ -31,7 +31,7 @@ function Navbar() {
 
   return (
     <>
-      <div ref={navbarRef} className="navbar flex fixed z-10">
+      <div ref={navbarRef} className="navbar flex fixed z-20">
         <div className="container flex px-6 py-2 justify-between font-bold text-white self-center">
           <div className="logo">
             <Link to="/">

@@ -4,7 +4,7 @@ function Hero() {
   return (
     <>
       <div className="hero relative flex">
-        <div className="container z-1 text-white self-end">
+        <div className="container text-white self-end">
           <div className="px-16 pb-20">
             <div>
               <div className="text-5xl font-bold mb-4">
