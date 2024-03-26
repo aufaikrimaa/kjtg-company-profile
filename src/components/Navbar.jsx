@@ -37,7 +37,7 @@ function Navbar() {
             <Link to="/">
               <div className="flex ">
                 <img src={logo} alt="" className="w-8 h-auto " />
-                <div className="text-3xl self-center ml-3">K T J G</div>
+                <div className="text-3xl self-center ml-3">K J T G</div>
               </div>
             </Link>
           </div>
