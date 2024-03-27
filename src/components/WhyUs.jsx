@@ -8,7 +8,7 @@ function WhyUs() {
       <div className="whyus flex px-16 pt-10">
         <div className="text-white self-center">
           <div>
-            <h1 className="whyus-title text-2xl flex justify-center font-bold mb-2 pb-1 relative">
+            <h1 className="whyus-title text-2xl flex justify-center font-bold pb-1 relative">
               Mengapa KJTG ?
             </h1>
           </div>
@@ -18,6 +18,7 @@ function WhyUs() {
                 src={imgUrl[44]}
                 alt="photo"
                 className="photo-whyus rounded-md"
+                crossOrigin="anonymous"
               />
             </div>
             <div className="basis-1/2 flex justify-center">

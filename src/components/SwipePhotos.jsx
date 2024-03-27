@@ -44,6 +44,7 @@ function SwipePhotos() {
                 src={img}
                 alt={`image ${index}`}
                 className="img-swipe rounded-md"
+                crossOrigin="anonymous"
               />
             </SwiperSlide>
           ))}
