@@ -26,7 +26,7 @@ function SwipePhotos() {
   };
   return (
     <>
-      <div className="photos flex">
+      <div className="photos flex pt-10">
         <Swiper
           modules={[Autoplay]}
           autoplay={{ delay: 2000 }}

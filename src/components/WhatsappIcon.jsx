@@ -8,8 +8,8 @@ function WhatsApp() {
 
   return (
     <>
-      <div className="whatsapp grid fixed z-10 place-content-end">
-        <div className="container pr-6 pb-5">
+      <div className="whatsapp grid fixed z-10">
+        <div className="container">
           <img
             src={whatsapp}
             alt="whatsapp icon"

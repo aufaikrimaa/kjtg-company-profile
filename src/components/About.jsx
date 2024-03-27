@@ -5,8 +5,8 @@ function About() {
     <>
       <div className="about flex">
         <div className="container self-center text-white px-16 ">
-          <h1 className="text-2xl flex justify-center font-bold mb-4 pb-1 relative">
-            Tentang Kami
+          <h1 className="about-title text-2xl flex justify-center font-bold mb-4 pb-1 relative">
+            Tentang Komunitas
           </h1>
           <p className="flex justify-center text-center text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

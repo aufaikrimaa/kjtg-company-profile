@@ -1,4 +1,15 @@
 .whyus {
   background-color: #0f0f0f;
-  height: 60vh;
+  height: 90vh;
+}
+
+.whyus-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10%;
+  height: 2.5px;
+  background-color: #ffaa00;
 }
