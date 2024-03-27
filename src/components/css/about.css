@@ -1,0 +1,15 @@
+.about {
+  background-color: #0f0f0f;
+  height: 30vh;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10%;
+  height: 2px;
+  background-color: #ffaa00;
+}
