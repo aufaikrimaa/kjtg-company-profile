@@ -45,7 +45,6 @@ const photos = [
   "https://lh3.googleusercontent.com/drive-viewer/AKGpihYPNYZlnsQsHjtDmrCvrrwS3HYoIpKvk3gpy3i4F_mvPOFqon0k3QipYiVtTxIc4NuC-_Bj5RW_-2RuwI3Abwb1fl52=s1600",
   "https://lh3.googleusercontent.com/drive-viewer/AKGpihZfIZ2eWaCE8p7RBYwJeeKs1GybjeLbWS48PbeOQXVmycip9SeIvkeI6I0Hlkb5AkazKG2q6zBkbndOUj_CZL2SaIYumg=s1600",
   "https://lh3.googleusercontent.com/drive-viewer/AKGpihYnQmEZKbdAwtxD4QI9lZ5ir2x9AbghDLNktO-XtvJUr_iVsH8wjZkmGlZ0QHfyMyQtLWf06eCscWGv2RlkrqGyILaquA=s1600",
-  "https://lh3.googleusercontent.com/drive-viewer/AKGpihYnQmEZKbdAwtxD4QI9lZ5ir2x9AbghDLNktO-XtvJUr_iVsH8wjZkmGlZ0QHfyMyQtLWf06eCscWGv2RlkrqGyILaquA=s1600",
   "https://lh3.googleusercontent.com/drive-viewer/AKGpihZZtS04DGQSs0-CsO_d85lDaoFls0z5F8m5FB2CSBqYNw62VLwzUtF7Gheg4IwPJs7TM4RcopD6QInXMAB1oNfuPjUP=s1600",
   "https://lh3.googleusercontent.com/drive-viewer/AKGpihbRP4-2ufusZRKSDVDEwV9lSY29xm_xpd1SdgJcngYuQP9oigOMqDLETC9pVvvCkoRUBqb-EvHWetaVlYYkA9pAG_Q9Eg=s1600",
   "https://lh3.googleusercontent.com/drive-viewer/AKGpihbvFoL9uO8rglbadeO1_N44hWbf-2cvu-RMrP8P2gdGohDi_aXdMFGh1bFudGAyezH0JbkHC4AZYGo176goO7CWy_-jPw=s1600",
