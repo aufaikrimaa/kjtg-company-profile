@@ -1,13 +1,17 @@
-.whyus {
+.tutor {
   background-color: #0f0f0f;
   height: 90vh;
 }
 
-.whyus-title::after {
+.tutor-content {
+  width: 45vw;
+}
+
+.tutor-title::after {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 20%;
   transform: translateX(-50%);
   width: 10%;
   height: 2px;
