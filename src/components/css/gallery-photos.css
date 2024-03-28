@@ -2,3 +2,14 @@
   background-color: #0f0f0f;
   height: 100vh;
 }
+
+.gphotos-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6%;
+  height: 2px;
+  background-color: #ffaa00;
+}
