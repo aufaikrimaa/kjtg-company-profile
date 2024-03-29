@@ -24,6 +24,32 @@ export default function SwipeVideos() {
           slidesPerView={6}
           navigation={true}
           modules={[FreeMode, Navigation]}
+          breakpoints={{
+            400: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+            1000: {
+              slidesPerView: 5,
+              spaceBetween: 10,
+            },
+            1400: {
+              slidesPerView: 6,
+              spaceBetween: 10,
+            },
+            1600: {
+              slidesPerView: 7,
+              spaceBetween: 10,
+            },
+            1800: {
+              slidesPerView: 7,
+              spaceBetween: 20,
+            },
+            2000: {
+              slidesPerView: 8,
+              spaceBetween: 30,
+            },
+          }}
           className="swiper-photos"
         >
           {videos.map((item, index) => (
