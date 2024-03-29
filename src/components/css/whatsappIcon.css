@@ -2,3 +2,10 @@
   margin-top: 90vh;
   margin-left: 94vw;
 }
+
+@media screen and (min-width: 1001px) and (max-width: 1399px) {
+  .whatsapp {
+    margin-top: 86vh;
+    margin-left: 92vw;
+  }
+}

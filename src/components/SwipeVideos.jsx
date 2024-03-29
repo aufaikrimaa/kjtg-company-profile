@@ -13,7 +13,7 @@ export default function SwipeVideos() {
   return (
     <>
       <div className="videos text-white px-16 pt-12">
-        <div className="mb-8">
+        <div className="mb-8 lg:mb-6">
           <h1 className="gsvideos-title text-2xl flex justify-center font-bold mb-4 pb-1 relative">
             Dokumentasi Video
           </h1>

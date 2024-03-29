@@ -4,6 +4,10 @@
   transition: height 0.3s ease, background-color 0.3s ease;
 }
 
+.container {
+  width: 100%;
+}
+
 .shrink {
   width: 100vw;
   height: 5rem;
@@ -36,4 +40,13 @@
 .menu:hover::before,
 .menu.active::before {
   transform: scaleX(1);
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1399px) {
+  .navbar {
+    height: 7rem;
+  }
+  .shrink {
+    height: 4rem;
+  }
 }

@@ -3,3 +3,9 @@
   background-size: contain;
   height: 40vh;
 }
+
+@media screen and (min-width: 1001px) and (max-width: 1399px) {
+  .footer {
+    height: 50vh;
+  }
+}

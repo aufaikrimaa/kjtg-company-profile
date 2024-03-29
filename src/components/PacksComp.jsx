@@ -7,7 +7,7 @@ import "./css/packs.css";
 function PacksComp() {
   return (
     <>
-      <div className="packs text-white pb-6">
+      <div className="packs text-white pb-6 3xl:pb-24">
         <div className="pb-6">
           <h1 className="packs-title text-2xl flex justify-center font-bold mb-4 pb-1 relative">
             Paket Wisata

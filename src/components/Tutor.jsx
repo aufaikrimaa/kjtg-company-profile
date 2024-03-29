@@ -40,7 +40,7 @@ function Tutor() {
 
   return (
     <>
-      <div className="tutor flex px-8 pb-8">
+      <div className="tutor flex px-8 pb-8 3xl:pb-24">
         <div className="self-center text-white">
           <div className="flex flex-row">
             <div className="tutor-content basis-1/2 flex justify-end">
@@ -54,9 +54,8 @@ function Tutor() {
                       key={index}
                       style={{
                         marginTop: item.mt,
-                        height: "12rem",
-                        width: "12rem",
                       }}
+                      className="h-[12rem] w-[12rem] lg:h-[11rem] lg:w-[11rem]"
                     >
                       <div>
                         <img src={bg} className="absolute h-[12rem]" />
@@ -80,9 +79,8 @@ function Tutor() {
                       key={index}
                       style={{
                         marginTop: item.mt,
-                        height: "12rem",
-                        width: "12rem",
                       }}
+                      className="h-[12rem] w-[12rem] lg:h-[11rem] lg:w-[11rem]"
                     >
                       <div>
                         <img src={bg} className="absolute h-[12rem]" />

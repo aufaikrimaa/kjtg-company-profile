@@ -31,41 +31,42 @@ function Navbar() {
 
   return (
     <>
-      <div ref={navbarRef} className="navbar flex fixed z-20">
-        <div className="container flex px-6 py-2 justify-between font-bold text-white self-center">
-          <div className="logo">
-            <Link to="/">
-              <div className="flex ">
-                <img src={logo} alt="" className="w-8 h-auto " />
-                <div className="text-3xl self-center ml-3">K J T G</div>
+      <div
+        ref={navbarRef}
+        className="navbar flex fixed z-20 px-6 py-2 justify-between font-bold text-white"
+      >
+        <div className="logo self-center">
+          <Link to="/">
+            <div className="flex ">
+              <img src={logo} alt="" className="w-8 h-auto lg:w-6" />
+              <div className="text-3xl lg:text-2xl self-center ml-3">
+                K J T G
               </div>
-            </Link>
-          </div>
-          <div className="self-center text-xl font-semibold">
-            <Link
-              to="/"
-              className={`menu mr-4 ${activeNav === "/" ? "active" : ""}`}
-              onClick={() => handleNavChange("/")}
-            >
-              Beranda
-            </Link>
-            <Link
-              to="/packs"
-              className={`menu mr-4 ${activeNav === "/packs" ? "active" : ""}`}
-              onClick={() => handleNavChange("/packs")}
-            >
-              Paket Wisata
-            </Link>
-            <Link
-              to="/gallery"
-              className={`menu mr-4 ${
-                activeNav === "/gallery" ? "active" : ""
-              }`}
-              onClick={() => handleNavChange("/gallery")}
-            >
-              Galeri
-            </Link>
-          </div>
+            </div>
+          </Link>
+        </div>
+        <div className="self-center text-xl lg:text-lg font-semibold">
+          <Link
+            to="/"
+            className={`menu mr-4 ${activeNav === "/" ? "active" : ""}`}
+            onClick={() => handleNavChange("/")}
+          >
+            Beranda
+          </Link>
+          <Link
+            to="/packs"
+            className={`menu mr-4 ${activeNav === "/packs" ? "active" : ""}`}
+            onClick={() => handleNavChange("/packs")}
+          >
+            Paket Wisata
+          </Link>
+          <Link
+            to="/gallery"
+            className={`menu mr-4 ${activeNav === "/gallery" ? "active" : ""}`}
+            onClick={() => handleNavChange("/gallery")}
+          >
+            Galeri
+          </Link>
         </div>
       </div>
     </>

@@ -32,7 +32,7 @@ function Footer() {
   return (
     <>
       <div className="footer">
-        <div className="flex flex row px-24 py-6">
+        <div className="flex flex row px-24 py-6 lg:px-20 3xl:py-12">
           <div className="basis-1/3 flex justify-center self-center">
             <div>
               <div className="flex text-white">

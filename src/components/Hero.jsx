@@ -5,15 +5,15 @@ function Hero() {
     <>
       <div className="hero relative flex">
         <div className="container text-white self-end">
-          <div className="px-16 pb-20">
+          <div className="px-16 pb-20 lg:pb-16">
             <div>
-              <div className="text-5xl font-bold mb-4">
+              <div className="text-5xl lg:text-4xl font-bold mb-4 lg:mb-3">
                 Komunitas <span className="text-[#FFAA00]">Jeep</span>
               </div>
-              <div className="text-6xl font-bold mb-4">
+              <div className="text-6xl lg:text-5xl font-bold mb-4 lg:mb-3">
                 <span className="text-[#FFAA00]">Tour</span> Galunggung
               </div>
-              <div className="text-2xl font-medium leading-9">
+              <div className="text-2xl lg:text-xl font-medium leading-9">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
                 <br />
                 eiusmod tempor incididunt ut labore et dolore

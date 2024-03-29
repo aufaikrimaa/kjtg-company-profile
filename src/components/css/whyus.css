@@ -13,3 +13,9 @@
   height: 2px;
   background-color: #ffaa00;
 }
+
+/* @media screen and (min-width: 1600px) and (max-width: 1800px) {
+  .whyus {
+    height: 60vh;
+  }
+} */

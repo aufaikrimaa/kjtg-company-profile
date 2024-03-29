@@ -3,12 +3,12 @@ import "./css/about.css";
 function About() {
   return (
     <>
-      <div className="about flex py-20">
-        <div className="container self-center text-white px-16 ">
+      <div className="about flex py-20 justify-center">
+        <div className="container self-center text-white px-16 lg:px-0">
           <h1 className="about-title text-2xl flex justify-center font-bold mb-4 pb-1 relative">
             Tentang Komunitas
           </h1>
-          <p className="flex justify-center text-center text-sm">
+          <p className=" text-center text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit
             euismod in pellentesque massa placerat duis ultricies lacus sed.
