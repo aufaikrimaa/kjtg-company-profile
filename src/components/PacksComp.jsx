@@ -1,6 +1,7 @@
 import bgPacks from "../assets/images/bg-packs.svg";
 import bgPacksPromo from "../assets/images/bg-packs-promo.svg";
 import dataPacks from "./data/packsData";
+import jeepIcon from "../assets/images/jeep-icon.svg";
 import "./css/packs.css";
 
 function PacksComp() {
@@ -35,7 +36,10 @@ function PacksComp() {
                     <ul className="self-center">
                       {data.desc.map((item, index) => (
                         <li key={index} className="mb-2">
-                          {item}
+                          <div className="flex">
+                            <img src={jeepIcon} alt="-" className="h-4 pr-2" />
+                            {item}
+                          </div>
                         </li>
                       ))}
                     </ul>
@@ -67,7 +71,10 @@ function PacksComp() {
                     <ul className="self-center">
                       {data.desc.map((item, index) => (
                         <li key={index} className="mb-2">
-                          {item}
+                          <div className="flex">
+                            <img src={jeepIcon} alt="-" className="h-4 pr-2" />
+                            {item}
+                          </div>
                         </li>
                       ))}
                     </ul>

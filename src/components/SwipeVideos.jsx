@@ -1,11 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination } from "swiper/modules";
+import { FreeMode, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 import videos from "./data/videoData";
 import instagram from "../assets/images/instagram-color.svg";
 import "swiper/css";
 import "swiper/css/free-mode";
-import "swiper/css/pagination";
+import "swiper/css/navigation";
 import "./css/swipe-videos.css";
 import "./css/gallery-videos.css";
 
@@ -22,10 +22,8 @@ export default function SwipeVideos() {
           grabCursor={true}
           spaceBetween={10}
           slidesPerView={6}
-          pagination={{
-            type: "fraction",
-          }}
-          modules={[FreeMode, Pagination]}
+          navigation={true}
+          modules={[FreeMode, Navigation]}
           className="swiper-photos"
         >
           {videos.map((item, index) => (
