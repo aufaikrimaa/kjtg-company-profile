@@ -3,7 +3,7 @@ import "./css/about.css";
 function About() {
   return (
     <>
-      <div className="about flex">
+      <div className="about flex py-20">
         <div className="container self-center text-white px-16 ">
           <h1 className="about-title text-2xl flex justify-center font-bold mb-4 pb-1 relative">
             Tentang Komunitas
