@@ -53,18 +53,18 @@ function Tutor() {
                     <div
                       key={index}
                       style={{
-                        backgroundImage: `url(${bg})`,
-                        backgroundPosition: "center",
                         marginTop: item.mt,
                         height: "12rem",
                         width: "12rem",
                       }}
-                      className="bg-cover bg-no-repeat"
                     >
-                      <div className="text-5xl font-bold w-12 h-12 flex justify-center">
+                      <div>
+                        <img src={bg} className="absolute h-[12rem] z-0" />
+                      </div>
+                      <div className=" text-5xl font-bold w-12 h-12 flex justify-center z-20 relative">
                         <div className="self-center"> {item.no}</div>
                       </div>
-                      <div className="text-xs p-2 flex justify-center pl-6 pr-3">
+                      <div className="text-xs p-2 flex justify-center pl-6 pr-3 relative">
                         {item.desc}
                       </div>
                     </div>
@@ -79,18 +79,18 @@ function Tutor() {
                     <div
                       key={index}
                       style={{
-                        backgroundImage: `url(${bg})`,
-                        backgroundPosition: "center",
                         marginTop: item.mt,
                         height: "12rem",
                         width: "12rem",
                       }}
-                      className="bg-cover bg-no-repeat"
                     >
-                      <div className="text-5xl font-bold w-12 h-12 flex justify-center">
+                      <div>
+                        <img src={bg} className="absolute h-[12rem] z-0" />
+                      </div>
+                      <div className=" text-5xl font-bold w-12 h-12 flex justify-center z-20 relative">
                         <div className="self-center"> {item.no}</div>
                       </div>
-                      <div className="text-xs p-2 flex justify-center pl-6 pr-3">
+                      <div className="text-xs p-2 flex justify-center pl-6 pr-3 relative">
                         {item.desc}
                       </div>
                     </div>

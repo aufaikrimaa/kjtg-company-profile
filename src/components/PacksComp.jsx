@@ -18,18 +18,18 @@ function PacksComp() {
               {data.promo ? (
                 <div
                   style={{
-                    backgroundImage: `url(${bgPacksPromo})`,
-                    backgroundPosition: "center",
                     height: "30rem",
                     width: "20rem",
                   }}
-                  className="bg-cover bg-no-repeat "
                 >
-                  <div className="flex justify-center pt-4 font-bold text-xl">
+                  <div className="absolute">
+                    <img src={bgPacksPromo} className="h-[30rem]" />
+                  </div>
+                  <div className="relative flex justify-center pt-4 font-bold text-xl">
                     {data.title}
                   </div>
                   <div
-                    className="flex justify-center"
+                    className="relative flex justify-center"
                     style={{ height: "20rem" }}
                   >
                     <ul className="self-center">
@@ -40,7 +40,7 @@ function PacksComp() {
                       ))}
                     </ul>
                   </div>
-                  <div>
+                  <div className="relative">
                     <p className="mt-1 ml-8 opacity-50">{data.price}</p>
                     <div className="text-2xl font-bold flex justify-center">
                       {data.promoPrice}
@@ -50,18 +50,18 @@ function PacksComp() {
               ) : (
                 <div
                   style={{
-                    backgroundImage: `url(${bgPacks})`,
-                    backgroundPosition: "center",
                     height: "30rem",
                     width: "20rem",
                   }}
-                  className="bg-cover bg-no-repeat"
                 >
-                  <div className="flex justify-center pt-4 font-bold text-xl">
+                  <div className="absolute">
+                    <img src={bgPacks} className="h-[30rem]" />
+                  </div>
+                  <div className="relative flex justify-center pt-4 font-bold text-xl">
                     {data.title}
                   </div>
                   <div
-                    className="flex justify-center"
+                    className="relative flex justify-center"
                     style={{ height: "20rem" }}
                   >
                     <ul className="self-center">
@@ -72,7 +72,7 @@ function PacksComp() {
                       ))}
                     </ul>
                   </div>
-                  <div className="text-3xl font-bold flex justify-center mt-4">
+                  <div className="relative text-3xl font-bold flex justify-center mt-4">
                     {data.price}
                   </div>
                 </div>
