@@ -11,8 +11,8 @@ function Gallery() {
       <Navbar />
       <WhatsApp />
       <HeaderBackground />
-      <GalleryPhotos />
       <GalleryVideos />
+      <GalleryPhotos />
       <Footer />
     </>
   );
