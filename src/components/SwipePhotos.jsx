@@ -7,7 +7,9 @@ import "./css/swipe-photos.css";
 
 function SwipePhotos() {
   useEffect(() => {
-    const firstSlide = document.querySelector(".swiper-slide:first-child img");
+    const firstSlide = document.querySelector(
+      ".swiper-slide-photos:first-child img"
+    );
     firstSlide.classList.add("active");
   }, []);
 
@@ -15,7 +17,7 @@ function SwipePhotos() {
     const slides = swiper.slides;
     slides.forEach((slide, index) => {
       const img = slide.querySelector("img");
-      if (index === swiper.activeIndex) {
+      if (index === swiper.activeIndex + 2) {
         img.style.opacity = 1;
         img.classList.add("active");
       } else {
@@ -26,7 +28,7 @@ function SwipePhotos() {
   };
   return (
     <>
-      <div className="photos flex pt-10">
+      <div className="photos flex pt-10 px-8">
         <Swiper
           modules={[Autoplay]}
           autoplay={{ delay: 2000 }}
@@ -34,12 +36,11 @@ function SwipePhotos() {
           grabCursor={true}
           slidesPerView={5}
           loop={true}
-          centeredSlides={true}
           className="swiper-photo self-center"
           onSlideChange={handleSlideOnChange}
         >
           {imgUrl.map((img, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} className="swiper-slide-photos">
               <img
                 src={img}
                 alt={`image ${index}`}

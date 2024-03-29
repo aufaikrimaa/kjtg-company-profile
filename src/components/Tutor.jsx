@@ -40,7 +40,7 @@ function Tutor() {
 
   return (
     <>
-      <div className="tutor flex px-8">
+      <div className="tutor flex px-8 pb-8">
         <div className="self-center text-white">
           <div className="flex flex-row">
             <div className="tutor-content basis-1/2 flex justify-end">

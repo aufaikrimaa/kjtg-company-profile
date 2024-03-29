@@ -3,29 +3,21 @@
   height: 75vh;
 }
 
-.swiper-slide img {
+.swiper-slide-photos img {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.swiper-slide img.active {
+.swiper-slide-photos img.active {
   opacity: 1;
   transform: scale(1);
 }
 
-.swiper-slide img:not(.active) {
+.swiper-slide-photos img:not(.active) {
   opacity: 0.5;
   transform: scale(0.8);
 }
 
-.swiper-slide-prev img,
-.swiper-slide-next img {
+.swiper-slide-photos-prev img,
+.swiper-slide-photos-next img {
   transform: scale(0.8);
-}
-
-.swiper-slide-prev img {
-  margin-right: 10px;
-}
-
-.swiper-slide-next img {
-  margin-left: 10px;
 }
