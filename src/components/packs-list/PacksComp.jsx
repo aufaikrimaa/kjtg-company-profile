@@ -1,8 +1,8 @@
-import bgPacks from "../assets/images/bg-packs.svg";
-import bgPacksPromo from "../assets/images/bg-packs-promo.svg";
-import dataPacks from "./data/packsData";
-import jeepIcon from "../assets/images/jeep-icon.svg";
-import "./css/packs.css";
+import bgPacks from "../../assets/images/bg-packs.svg";
+import bgPacksPromo from "../../assets/images/bg-packs-promo.svg";
+import dataPacks from "../data/packsData";
+import jeepIcon from "../../assets/images/jeep-icon.svg";
+import "./packs.css";
 
 function PacksComp() {
   return (

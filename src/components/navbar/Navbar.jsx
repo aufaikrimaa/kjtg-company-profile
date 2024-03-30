@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/images/logo-galunggung.png";
-import "./css/navbar.css";
+import logo from "../../assets/images/logo-galunggung.png";
+import "./navbar.css";
 
 function Navbar() {
   const navbarRef = useRef(null);

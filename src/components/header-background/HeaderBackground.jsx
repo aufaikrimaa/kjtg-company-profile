@@ -1,4 +1,4 @@
-import "./css/header-background.css";
+import "./header-background.css";
 
 function HeaderBackground() {
   return (

@@ -1,6 +1,6 @@
-import ThumbsSwiper from "./ThumbsSwiper";
-import imgUrl from "./data/photoData";
-import "./css/whyus.css";
+import ThumbsSwiper from "../thumbs-swiper/ThumbsSwiper";
+import imgUrl from "../data/photoData";
+import "./whyus.css";
 
 function WhyUs() {
   return (

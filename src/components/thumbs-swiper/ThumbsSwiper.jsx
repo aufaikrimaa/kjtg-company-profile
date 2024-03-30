@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
-import "./css/thumbswiper.css";
+import "./thumbswiper.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import price from "../assets/images/price.svg";
-import expert from "../assets/images/expert.svg";
-import facility from "../assets/images/facility.svg";
-import order from "../assets/images/order.svg";
-import photos from "../assets/images/photos.svg";
-import shield from "../assets/images/shield.svg";
+import price from "../../assets/images/price.svg";
+import expert from "../../assets/images/expert.svg";
+import facility from "../../assets/images/facility.svg";
+import order from "../../assets/images/order.svg";
+import photos from "../../assets/images/photos.svg";
+import shield from "../../assets/images/shield.svg";
 
 function ThumbsSwiper() {
   const [nav1, setNav1] = useState(null);

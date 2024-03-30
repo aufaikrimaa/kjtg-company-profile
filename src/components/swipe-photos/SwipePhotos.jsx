@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import imgUrl from "./data/photoData";
+import imgUrl from "../data/photoData";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "./css/swipe-photos.css";
+import "./swipe-photos.css";
 
 function SwipePhotos() {
   useEffect(() => {

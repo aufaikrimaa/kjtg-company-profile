@@ -1,5 +1,5 @@
-import "./css/whatsappIcon.css";
-import whatsapp from "../assets/images/whatsapp.svg";
+import "./whatsappIcon.css";
+import whatsapp from "../../assets/images/whatsapp.svg";
 
 function WhatsApp() {
   const handleClick = () => {

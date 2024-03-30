@@ -1,5 +1,5 @@
-import imgUrl from "./data/photoData";
-import "./css/gallery-photos.css";
+import imgUrl from "../data/photoData";
+import "./gallery-photos.css";
 
 function GalleryPhotos() {
   return (

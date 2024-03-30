@@ -1,13 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
-import videos from "./data/videoData";
-import instagram from "../assets/images/instagram-color.svg";
+import videos from "../data/videoData";
+import instagram from "../../assets/images/instagram-color.svg";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
-import "./css/swipe-videos.css";
-import "./css/gallery-videos.css";
+import "./swipe-videos.css";
+import "../gallery-videos/gallery-videos.css";
 
 export default function SwipeVideos() {
   return (

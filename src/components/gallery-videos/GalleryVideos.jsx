@@ -1,6 +1,6 @@
-import videos from "./data/videoData";
-import instagram from "../assets/images/instagram-color.svg";
-import "./css/gallery-videos.css";
+import videos from "../data/videoData";
+import instagram from "../../assets/images/instagram-color.svg";
+import "./gallery-videos.css";
 
 function GalleryVideos() {
   return (

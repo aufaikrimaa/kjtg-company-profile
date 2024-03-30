@@ -1,5 +1,5 @@
-import bg from "../assets/images/bg-tutor.svg";
-import "./css/tutor.css";
+import bg from "../../assets/images/bg-tutor.svg";
+import "./tutor.css";
 
 function Tutor() {
   const data1 = [

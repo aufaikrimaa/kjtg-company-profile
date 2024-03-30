@@ -1,9 +1,9 @@
-import "./css/footer.css";
-import logo from "../assets/images/logo-galunggung.png";
-import youtube from "../assets/images/youtube.svg";
-import tiktok from "../assets/images/tiktok.svg";
-import instagram from "../assets/images/instagram.svg";
-import facebook from "../assets/images/facebook.svg";
+import "./footer.css";
+import logo from "../../assets/images/logo-galunggung.png";
+import youtube from "../../assets/images/youtube.svg";
+import tiktok from "../../assets/images/tiktok.svg";
+import instagram from "../../assets/images/instagram.svg";
+import facebook from "../../assets/images/facebook.svg";
 
 function Footer() {
   const sosmedData = [

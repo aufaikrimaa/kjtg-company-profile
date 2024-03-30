@@ -1,12 +1,12 @@
 import About from "../components/about/About";
-import Footer from "../components/Footer";
-import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
-import SwipePhotos from "../components/SwipePhotos";
-import SwipeVideos from "../components/SwipeVideos";
-import Tutor from "../components/Tutor";
-import WhatsApp from "../components/WhatsappIcon";
-import WhyUs from "../components/WhyUs";
+import Footer from "../components/footer/Footer";
+import Hero from "../components/hero/Hero";
+import Navbar from "../components/navbar/Navbar";
+import SwipePhotos from "../components/swipe-photos/SwipePhotos";
+import SwipeVideos from "../components/swipe-videos/SwipeVideos";
+import Tutor from "../components/tutor/Tutor";
+import WhatsApp from "../components/whatsapp-icon/WhatsappIcon";
+import WhyUs from "../components/why-us/WhyUs";
 
 function Home() {
   return (
