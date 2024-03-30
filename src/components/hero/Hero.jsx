@@ -14,9 +14,9 @@ function Hero() {
                 <span className="text-[#FFAA00]">Tour</span> Galunggung
               </div>
               <div className="text-2xl lg:text-xl font-medium leading-9">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+                Kami adalah Jeep Tour Galunggung pertama, kami adalah pelopor!
                 <br />
-                eiusmod tempor incididunt ut labore et dolore
+                Kami berupaya menyediakan layanan dan kualitas terbaik!
               </div>
             </div>
           </div>

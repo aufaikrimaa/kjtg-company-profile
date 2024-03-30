@@ -3,7 +3,7 @@ import whatsapp from "../../assets/images/whatsapp.svg";
 
 function WhatsApp() {
   const handleClick = () => {
-    window.open("", "_blank");
+    window.open("whatsapp://send?phone=6281224284181", "_blank");
   };
 
   return (
@@ -14,6 +14,7 @@ function WhatsApp() {
             src={whatsapp}
             alt="whatsapp icon"
             className="h-6 cursor-pointer hover:scale-125 transition ease-in-out"
+            onClick={handleClick}
           />
         </div>
       </div>

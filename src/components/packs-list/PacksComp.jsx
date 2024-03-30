@@ -30,7 +30,7 @@ function PacksComp() {
                     {data.title}
                   </div>
                   <div
-                    className="relative flex justify-center"
+                    className="relative flex justify-center pt-4"
                     style={{ height: "20rem" }}
                   >
                     <ul className="self-center">
@@ -65,7 +65,7 @@ function PacksComp() {
                     {data.title}
                   </div>
                   <div
-                    className="relative flex justify-center"
+                    className="relative flex justify-center  pt-4"
                     style={{ height: "20rem" }}
                   >
                     <ul className="self-center">

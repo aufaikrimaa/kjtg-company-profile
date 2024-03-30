@@ -34,7 +34,7 @@ function SwipePhotos() {
           autoplay={{ delay: 2000 }}
           speed={1000}
           grabCursor={true}
-          slidesPerView={5}
+          slidesPerView={imgUrl.length < 5 ? imgUrl.length : 5}
           loop={true}
           className="swiper-photo self-center"
           onSlideChange={handleSlideOnChange}

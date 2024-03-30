@@ -8,24 +8,41 @@ function About() {
           <h1 className="about-title text-2xl flex justify-center font-bold mb-4 pb-1 relative">
             Tentang Komunitas
           </h1>
-          <p className=" text-center text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit
-            euismod in pellentesque massa placerat duis ultricies lacus sed.
-            Felis eget velit aliquet sagittis id consectetur purus. Ut venenatis
-            tellus in metus vulputate eu. Nec feugiat nisl pretium fusce id
-            velit ut tortor. Bibendum neque egestas congue quisque egestas diam
-            in arcu. Id volutpat lacus laoreet non curabitur. Donec ultrices
-            tincidunt arcu non sodales neque. Nulla pharetra diam sit amet nisl
-            suscipit adipiscing bibendum. Elit eget gravida cum sociis natoque
-            penatibus et magnis dis. Nunc id cursus metus aliquam eleifend mi in
-            nulla posuere. Euismod nisi porta lorem mollis aliquam ut porttitor
-            leo a. Vitae elementum curabitur vitae nunc sed velit dignissim
-            sodales. Placerat duis ultricies lacus sed turpis. Magna fringilla
-            urna porttitor rhoncus dolor. Venenatis lectus magna fringilla urna
-            porttitor rhoncus dolor purus non. Ultrices eros in cursus turpis.
-            Pharetra magna ac placerat vestibulum lectus mauris ultrices eros.
-          </p>
+          <div className=" text-center text-sm">
+            <div className="mb-2">
+              <p>
+                Selamat datang di Komunitas Jeep Tour Galunggung, komunitas
+                pertama dan terbesar yang resmi mengoperasikan sewa jeep wisata
+                di kawasan Galunggung! Kami bangga menjadi pionir dalam industri
+                ini dan menawarkan pengalaman berkendara yang tak terlupakan di
+                jalur-jalur 4x4 terbaik.
+              </p>
+            </div>
+
+            <div className="mb-2">
+              <h3 className="mb-1">🚙 Apa yang membuat kami berbeda?</h3>
+              <p>
+                Kami hanya menggunakan armada jeep asli 4x4, memastikan Anda
+                mendapatkan pengalaman berkendara yang sebenarnya dan penuh
+                tantangan. Dengan jejak roda 4x4 yang seluruhnya, kami menjamin
+                adrenalin tinggi dan petualangan sejati di setiap perjalanan.
+                Bergabunglah dengan kami dan rasakan sensasi menaiki jeep di
+                medan yang menantang dengan pemandangan alam Galunggung yang
+                menakjubkan. Ayo jelajahi keindahan alam dan budaya lokal dengan
+                gaya petualangan yang sesungguhnya! Ikuti kami di media sosial
+                kami untuk mendapatkan informasi lebih lanjut tentang paket
+                wisata, rute petualangan, dan promo eksklusif. Bergabung
+                sekarang dan jadilah bagian dari komunitas petualang sejati!
+              </p>
+            </div>
+
+            <div>
+              <h3>
+                Ayo, temukan petualangan Anda bersama Komunitas Jeep Tour
+                Galunggung! 🌄🚙🔥
+              </h3>
+            </div>
+          </div>
         </div>
       </div>
     </>

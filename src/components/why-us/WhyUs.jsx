@@ -12,8 +12,8 @@ function WhyUs() {
               Mengapa KJTG ?
             </h1>
           </div>
-          <div className="flex flex-row lg:pt-5 2xl:pt-0 h-[32rem]">
-            <div className="basis-1/2 flex justify-center self-center p-10 lg:p-4 2xl:p-18 3xl:p-20">
+          <div className="flex flex-row lg:pt-0 2xl:pt-0 h-[32rem] lg:h-[26rem]">
+            <div className="basis-2/5 flex justify-center self-center">
               <img
                 src={imgUrl[44]}
                 alt="photo"
@@ -21,7 +21,7 @@ function WhyUs() {
                 crossOrigin="anonymous"
               />
             </div>
-            <div className="basis-1/2 flex justify-center">
+            <div className="basis-3/5 flex justify-end">
               <div className="self-center">
                 <ThumbsSwiper />
               </div>

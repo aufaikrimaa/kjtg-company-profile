@@ -24,32 +24,32 @@ function ThumbsSwiper() {
   const data = [
     {
       title: "Harga terjangkau",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+      desc: "Menawarkan harga yang terjangkau untuk berbagai kebutuhan Anda.",
       icon: price,
     },
     {
       title: "Profesional",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+      desc: "Tim yang profesional dan berpengalaman siap melayani Anda dengan sepenuh hati.",
       icon: expert,
     },
     {
       title: "Fasilitas terbaik",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+      desc: "Menyediakan fasilitas terbaik untuk kenyamanan dan kepuasan Anda.",
       icon: facility,
     },
     {
       title: "Booking cepat",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+      desc: "Proses booking yang cepat, mudah, dan efisien untuk memudahkan transaksi Anda.",
       icon: order,
     },
     {
       title: "Dokumentasi",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+      desc: "Menyediakan dokumentasi dengan Drone and Camera SLR by request",
       icon: photos,
     },
     {
       title: "Asuransi",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+      desc: "Menyediakan asuransi untuk keamanan dan ketenangan hati Anda dalam setiap transaksi.",
       icon: shield,
     },
   ];

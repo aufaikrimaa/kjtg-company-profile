@@ -9,25 +9,21 @@ function Footer() {
   const sosmedData = [
     {
       icon: youtube,
-      link: "",
+      link: "https://www.youtube.com/@komunitas_jeep_tour_galu-kz2fm",
     },
     {
       icon: tiktok,
-      link: "",
+      link: "https://www.tiktok.com/@kjtg_tasikmalaya",
     },
     {
       icon: instagram,
-      link: "",
+      link: "https://www.instagram.com/komunitas_jeep_tour_galunggung?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     },
     {
       icon: facebook,
-      link: "",
+      link: "https://web.facebook.com/people/Komunitas-Jeep-Tour-Galunggung/61554666005868/",
     },
   ];
-
-  const handleClick = () => {
-    window.open(sosmedData.link, "_blank");
-  };
 
   return (
     <>
@@ -45,7 +41,9 @@ function Footer() {
                     key={index}
                     src={data.icon}
                     className="w-5 mr-2 cursor-pointer"
-                    onClick={handleClick}
+                    onClick={() => {
+                      window.open(data.link, "_blank");
+                    }}
                   />
                 ))}
               </div>
@@ -65,11 +63,11 @@ function Footer() {
               <div>
                 <div className="mt-2">
                   <h2 className="text-sm font-bold mb-0.5">Telp & SMS</h2>
-                  <p className="text-xs">08xxxxxxxxx</p>
+                  <p className="text-xs">+62 812-2428-4181</p>
                 </div>
                 <div className="mt-2">
                   <h2 className="text-sm font-bold mb-0.5">WhatsApp</h2>
-                  <p className="text-xs">08xxxxxxxxx</p>
+                  <p className="text-xs">+62 812-2428-4181</p>
                 </div>
                 <div className="mt-2">
                   <h2 className="text-sm font-bold mb-0.5">Email</h2>
@@ -82,13 +80,21 @@ function Footer() {
             <div>
               <div>
                 <h1 className="text-white font-bold text-xl mb-4">
-                  Alamat Kantor
+                  Alamat Posko
                 </h1>
               </div>
               <div>
-                <p className="text-white text-xs">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+                <p
+                  className="text-white text-xs cursor-pointer"
+                  onClick={() => {
+                    window.open(
+                      "https://www.google.com/maps/place/POSKO+Komunitas+Jeep+Tour+Galunggung/@-7.2671806,108.094701,17z/data=!3m1!4b1!4m6!3m5!1s0x2e6f53d9197c25d1:0xbc6f602e7865725!8m2!3d-7.2671859!4d108.0972759!16s%2Fg%2F11vpnpnwsg?authuser=0&entry=ttu",
+                      "_blank"
+                    );
+                  }}
+                >
+                  📍 Jalan Ah Nasution No.km 7, Linggajati, Kec. Sukaratu,
+                  Kabupaten Tasikmalaya, Jawa Barat 46181
                 </p>
               </div>
             </div>
