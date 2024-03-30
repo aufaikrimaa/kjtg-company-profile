@@ -45,7 +45,7 @@ const packs = [
     ],
     price: "Rp. 600.000,-",
     promo: true,
-    promoPrice: "Rp. 350.000,-",
+    promoPrice: "Rp. 450.000,-",
   },
 ];
 export default packs;
