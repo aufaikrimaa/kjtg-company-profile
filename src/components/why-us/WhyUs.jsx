@@ -15,7 +15,7 @@ function WhyUs() {
           <div className="flex flex-row lg:pt-0 2xl:pt-0 h-[32rem] lg:h-[26rem]">
             <div className="basis-2/5 flex justify-center self-center">
               <img
-                src={imgUrl[44]}
+                src={imgUrl[4]}
                 alt="photo"
                 className="photo-whyus rounded-md"
                 crossOrigin="anonymous"
