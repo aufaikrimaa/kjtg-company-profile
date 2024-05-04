@@ -1,10 +1,5 @@
 .tutor {
   background-color: #0f0f0f;
-  height: 90vh;
-}
-
-.tutor-content {
-  width: 45vw;
 }
 
 .tutor-title::after {

@@ -66,7 +66,7 @@ function ThumbsSwiper() {
   };
 
   return (
-    <div className="thumbs text-white">
+    <div className="thumbs text-white w-[45vw] sm:w-[80vw] md:w-[60vw]">
       <Slider
         {...settings2}
         asNavFor={nav1}
@@ -75,7 +75,7 @@ function ThumbsSwiper() {
       >
         {data.map((item, index) => (
           <div key={index}>
-            <img src={item.icon} alt={item.title} className="w-10" />
+            <img src={item.icon} alt={item.title} className="w-10 sm:w-6" />
           </div>
         ))}
       </Slider>
@@ -85,11 +85,13 @@ function ThumbsSwiper() {
         ref={(slider) => (sliderRef1 = slider)}
       >
         {data.map((item, index) => (
-          <div key={index} className="px-2">
-            <div className="bg-[#FFAA00] bg-opacity-50 rounded-md p-6 border-l-4 border-[#FFAA00] ">
+          <div key={index} className="px-2 sm:px-0 sm:pl-4 md:px-0 md:pl-4">
+            <div className="bg-[#FFAA00] bg-opacity-50 rounded-md p-6 sm:p-4 border-l-4 border-[#FFAA00] ">
               <div>
-                <h3 className="text-xl font-bold mb-4">{item.title}</h3>
-                <p className="text-sm">{item.desc}</p>
+                <h3 className="text-xl sm:text-base md:text-lg font-bold mb-4 sm:mb-2 md:mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-sm sm:text-xs">{item.desc}</p>
               </div>
             </div>
           </div>

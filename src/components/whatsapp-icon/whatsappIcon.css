@@ -5,7 +5,21 @@
 
 @media screen and (min-width: 1001px) and (max-width: 1399px) {
   .whatsapp {
-    margin-top: 86vh;
+    margin-top: 90vh;
     margin-left: 92vw;
+  }
+}
+
+@media screen and (min-width: 840px) and (max-width: 1100px) {
+  .whatsapp {
+    margin-top: 90vh;
+    margin-left: 90vw;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 839px) {
+  .whatsapp {
+    margin-top: 92vh;
+    margin-left: 82vw;
   }
 }

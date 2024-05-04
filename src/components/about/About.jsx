@@ -3,12 +3,12 @@ import "./about.css";
 function About() {
   return (
     <>
-      <div className="about flex py-20 justify-center">
-        <div className="container self-center text-white px-16 lg:px-0">
-          <h1 className="about-title text-2xl flex justify-center font-bold mb-4 pb-1 relative">
+      <div className="about flex py-20 justify-center h-[30vh] xl:h-[60vh] lg:h-[65vh] sm:h-[60vh]">
+        <div className="container self-center text-white px-16 lg:px-0 md:px-4 sm:px-2">
+          <h1 className="about-title text-2xl sm:text-lg flex justify-center font-bold mb-4 pb-1 relative">
             Tentang Komunitas
           </h1>
-          <div className=" text-center text-sm">
+          <div className=" text-center text-sm sm:text-[0.65rem]">
             <div className="mb-2">
               <p>
                 Selamat datang di Komunitas Jeep Tour Galunggung, komunitas

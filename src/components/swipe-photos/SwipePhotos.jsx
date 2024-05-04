@@ -15,9 +15,15 @@ function SwipePhotos() {
 
   const handleSlideOnChange = (swiper) => {
     const slides = swiper.slides;
+    const screenWidth = window.innerWidth;
+
     slides.forEach((slide, index) => {
       const img = slide.querySelector("img");
-      if (index === swiper.activeIndex + 2) {
+      let indexOffset = 1;
+      if (screenWidth >= 1100) {
+        indexOffset = 2;
+      }
+      if (index === swiper.activeIndex + indexOffset) {
         img.style.opacity = 1;
         img.classList.add("active");
       } else {
@@ -28,16 +34,23 @@ function SwipePhotos() {
   };
   return (
     <>
-      <div className="photos flex pt-10 lg:pt-4 px-8">
+      <div className="photos flex pt-10 lg:pt-4 md:pt-1 sm:pt-0 px-8 md:px-6 sm:px-4 h-[75vh] md:h-[25vh] sm:h-[20vh]">
         <Swiper
           modules={[Autoplay]}
           autoplay={{ delay: 2000 }}
           speed={1000}
           grabCursor={true}
-          slidesPerView={imgUrl.length < 5 ? imgUrl.length : 5}
           loop={true}
           className="swiper-photo self-center"
           onSlideChange={handleSlideOnChange}
+          breakpoints={{
+            300: {
+              slidesPerView: 3,
+            },
+            1100: {
+              slidesPerView: 5,
+            },
+          }}
         >
           {imgUrl.map((img, index) => (
             <SwiperSlide key={index} className="swiper-slide-photos">

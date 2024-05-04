@@ -7,5 +7,10 @@
     ),
     url("../../assets/images/hero.svg");
   background-size: cover;
-  height: 100vh;
+}
+
+@media screen and (min-width: 300px) and (max-width: 839px) {
+  .container {
+    max-width: 100% !important;
+  }
 }

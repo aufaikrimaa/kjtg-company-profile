@@ -7,17 +7,17 @@ function GalleryVideos() {
     <>
       <div className="gallery-videos text-white">
         <div className="mx-[2rem]">
-          <h1 className="gvideos-title text-2xl flex justify-center font-bold mb-4 pb-1 relative">
+          <h1 className="gvideos-title text-2xl sm:text-lg flex justify-center font-bold mb-4 pb-1 relative">
             Galeri Video
           </h1>
           <div className="flex flex-wrap justify-center pb-10">
             {videos.map((item, index) => (
-              <div key={index} className="relative m-2">
+              <div key={index} className="relative m-2 sm:m-1">
                 <img
                   src={item.cover}
                   alt={`image ${index}`}
                   crossOrigin="anonymous"
-                  className="cover-videos w-24 rounded-md"
+                  className="cover-videos w-24 sm:w-12 md:w-20 rounded-md"
                   onClick={() => {
                     window.open(item.link, "_blank");
                   }}

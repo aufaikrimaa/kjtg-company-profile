@@ -1,6 +1,5 @@
 .about {
   background-color: #0f0f0f;
-  height: 30vh;
 }
 
 .about-title::after {
@@ -12,16 +11,4 @@
   width: 14%;
   height: 2px;
   background-color: #ffaa00;
-}
-
-@media screen and (min-width: 1400px) and (max-width: 1600px) {
-  .about {
-    height: 60vh;
-  }
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1399px) {
-  .about {
-    height: 65vh;
-  }
 }

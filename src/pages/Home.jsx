@@ -18,7 +18,7 @@ function Home() {
       <About />
       <WhyUs />
       <SwipeVideos />
-      <Tutor />
+      {/* <Tutor /> */}
       <Footer />
     </>
   );
