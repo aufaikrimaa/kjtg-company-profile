@@ -1,17 +1,36 @@
 import React, { useState, useEffect } from "react";
-import imgUrl from "../data/photoData";
+import loadPhotos from "../data/photoData";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./swipe-photos.css";
 
 function SwipePhotos() {
+  const [loaded, setLoaded] = useState(false);
+  const [photos, setPhotos] = useState([]);
+  const [firstSlideLoaded, setFirstSlideLoaded] = useState(false);
   useEffect(() => {
-    const firstSlide = document.querySelector(
-      ".swiper-slide-photos:first-child img"
-    );
-    firstSlide.classList.add("active");
+    loadPhotos()
+      .then((loadedPhotos) => {
+        setPhotos(loadedPhotos);
+        setLoaded(true);
+      })
+      .catch((error) => {
+        console.error("Terjadi kesalahan saat memuat foto:", error);
+      });
   }, []);
+
+  useEffect(() => {
+    if (loaded && photos.length > 0 && !firstSlideLoaded) {
+      const firstSlide = document.querySelector(
+        ".swiper-slide-photos:first-child img"
+      );
+      if (firstSlide) {
+        firstSlide.classList.add("active");
+        setFirstSlideLoaded(true);
+      }
+    }
+  }, [loaded, photos, firstSlideLoaded]);
 
   const handleSlideOnChange = (swiper) => {
     const slides = swiper.slides;
@@ -32,6 +51,7 @@ function SwipePhotos() {
       }
     });
   };
+
   return (
     <>
       <div className="photos flex pt-10 lg:pt-4 md:pt-1 sm:pt-0 px-8 md:px-6 sm:px-4 h-[75vh] md:h-[25vh] sm:h-[20vh]">
@@ -52,19 +72,21 @@ function SwipePhotos() {
             },
           }}
         >
-          {imgUrl.map((img, index) => (
-            <SwiperSlide key={index} className="swiper-slide-photos">
-              <img
-                src={img}
-                alt={`image ${index}`}
-                className="img-swipe rounded-md"
-                crossOrigin="anonymous"
-              />
-            </SwiperSlide>
-          ))}
+          {loaded &&
+            photos.map((img, index) => (
+              <SwiperSlide key={index} className="swiper-slide-photos">
+                <img
+                  src={img}
+                  alt={`image ${index}`}
+                  className="img-swipe rounded-md"
+                  crossOrigin="anonymous"
+                />
+              </SwiperSlide>
+            ))}
         </Swiper>
       </div>
     </>
   );
 }
+
 export default SwipePhotos;

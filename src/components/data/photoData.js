@@ -50,4 +50,31 @@ const photos = [
   photo24,
 ];
 
-export default photos;
+function loadPhotos() {
+  const promises = [];
+  photos.forEach((photo) => {
+    const promise = new Promise((resolve, reject) => {
+      const img = new Image();
+      img.src = photo;
+      img.onload = () => {
+        resolve(photo);
+      };
+      img.onerror = () => {
+        reject(new Error(`Gagal memuat foto: ${photo}`));
+      };
+    });
+    promises.push(promise);
+  });
+
+  return Promise.all(promises);
+}
+
+loadPhotos()
+  .then(() => {
+    console.log("Semua foto telah berhasil dimuat");
+  })
+  .catch((error) => {
+    console.error("Terjadi kesalahan saat memuat foto:", error);
+  });
+
+export default loadPhotos;
