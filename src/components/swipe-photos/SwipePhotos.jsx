@@ -9,6 +9,7 @@ function SwipePhotos() {
   const [loaded, setLoaded] = useState(false);
   const [photos, setPhotos] = useState([]);
   const [firstSlideLoaded, setFirstSlideLoaded] = useState(false);
+
   useEffect(() => {
     loadPhotos()
       .then((loadedPhotos) => {
@@ -54,7 +55,7 @@ function SwipePhotos() {
 
   return (
     <>
-      <div className="photos flex pt-10 lg:pt-4 md:pt-1 sm:pt-0 px-8 md:px-6 sm:px-4 h-[75vh] md:h-[25vh] sm:h-[20vh]">
+      <div className="photos flex pt-10 lg:pt-4 md:pt-1 sm:pt-0 px-8 md:px-6 sm:px-4 h-[75vh] md:h-[16rem] sm:h-[8rem]">
         <Swiper
           modules={[Autoplay]}
           autoplay={{ delay: 2000 }}

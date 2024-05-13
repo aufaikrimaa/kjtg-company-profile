@@ -20,7 +20,9 @@ function Gallery() {
   }, []);
   return (
     <>
-      {photosLoaded && (
+      {photosLoaded === false ? (
+        "loading"
+      ) : (
         <>
           <Navbar />
           <WhatsApp />

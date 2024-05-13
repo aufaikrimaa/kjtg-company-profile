@@ -18,8 +18,8 @@ function WhyUs() {
   }, []);
   return (
     <>
-      <div className="whyus flex px-16 pt-10 sm:pt-4 md:pt-4 sm:px-4 md:px-20 h-[90vh] sm:h-[45vh] md:h-[40vh] sm:justify-center md:justify-center">
-        <div className="text-white self-center sm:w-full">
+      <div className="whyus flex sm:w-[100vw] px-16 pt-10 sm:pt-4 md:pt-4 sm:px-4 md:px-20 h-[90vh] sm:h-[22rem] md:h-[28rem] sm:justify-center md:justify-center">
+        <div className="text-white self-center sm:w-[100vw]">
           <div>
             <h1 className="whyus-title text-2xl flex justify-center font-bold pb-1 relative sm:text-lg">
               Mengapa KJTG ?
@@ -34,7 +34,7 @@ function WhyUs() {
                 crossOrigin="anonymous"
               />
             </div>
-            <div className="basis-3/5 flex justify-center">
+            <div className="basis-3/5 sm:basis-0 flex justify-center">
               <div className="self-center">
                 <ThumbsSwiper />
               </div>

@@ -13,8 +13,8 @@ function Hero() {
               <div className="text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-bold mb-4 lg:mb-3 md:mb-3 sm:mb-2">
                 <span className="text-[#FFAA00]">Tour</span> Galunggung
               </div>
-              <div className="text-2xl lg:text-xl md:text-lg sm:text-[0.65rem] font-medium leading-9 sm:leading-5">
-                Kami adalah Jeep Tour Galunggung pertama, kami adalah pelopor!
+              <div className="text-2xl lg:text-xl md:text-lg sm:text-[0.65rem] font-medium leading-10 lg:leading-9 sm:leading-5">
+                Kami adalah Jeep Tour Galunggung pertama!
                 <br />
                 Kami berupaya menyediakan layanan dan kualitas terbaik!
               </div>

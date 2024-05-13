@@ -20,9 +20,11 @@ function Home() {
         console.error("Terjadi kesalahan saat memuat foto:", error);
       });
   }, []);
+
+  console.log(photosLoaded);
   return (
     <>
-      {photosLoaded && (
+      {photosLoaded === true ? (
         <>
           <Navbar />
           <WhatsApp />
@@ -33,6 +35,8 @@ function Home() {
           <SwipeVideos />
           <Footer />
         </>
+      ) : (
+        "loading"
       )}
     </>
   );
