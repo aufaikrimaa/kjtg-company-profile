@@ -21,7 +21,7 @@ function Gallery() {
   return (
     <>
       {photosLoaded === false ? (
-        "loading"
+        <>loading</>
       ) : (
         <>
           <Navbar />
