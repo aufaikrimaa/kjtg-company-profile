@@ -52,7 +52,7 @@
 const paket = [
   {
     title: "PAKET FUN OFFROAD KOTA -PASIRDATAR-CIPANAS",
-    price: "Rp.900.000,-/Jeep",
+    price: "Rp. 900,000,-/Jeep",
     fasilitas: [
       "Jeep 4x4 kapasitas 4 orang (Driver, BBM, Parkir)",
       {
@@ -71,7 +71,7 @@ const paket = [
   },
   {
     title: "PAKET FUN OFFROAD (+) OUTBOND ACTIVITY KOTA -PASIRDATAR-CIPANAS",
-    price: "Rp.1.200.000,-/Jeep",
+    price: "Rp. 1,200,000,-/Jeep",
     fasilitas: [
       "Minimal peserta 5 Jeep atau 20 orang",
       "Jeep 4x4 kapasitas 4 orang (Driver, BBM, Parkir)",
@@ -93,6 +93,7 @@ const paket = [
   },
   {
     title: "PAKET FUN OFFROAD KOTA-KAWAH -PASIRDATAR-CIPANAS",
+    price: "Rp. 1,300,000,-/Jeep",
     fasilitas: [
       "Jeep 4x4 kapasitas 4 orang (Driver, BBM, Parkir)",
       {
@@ -114,11 +115,10 @@ const paket = [
       "Safety (helm)",
       "Asuransi kecelakaan",
     ],
-    price: "Rp. 1.300.000,-/Jeep",
   },
   {
     title: "PAKET FUN OFFROAD TRIP SHORT CIPANAS - PASIRDATAR",
-    price: "Rp. 450.000,-/Jeep",
+    price: "Rp. 450,000,-/Jeep",
     fasilitas: [
       "Jeep 4x4 kapasitas 4 orang (Driver, BBM, Parkir)",
       {
