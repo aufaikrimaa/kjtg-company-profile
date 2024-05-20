@@ -9,7 +9,6 @@ import WhatsApp from "../components/whatsapp-icon/WhatsappIcon";
 import WhyUs from "../components/why-us/WhyUs";
 import loadPhotos from "../components/data/photoData";
 import Loading from "../components/loading/Loading";
-import Tutor from "@/components/tutor/Tutor";
 
 function Home() {
   const [photosLoaded, setPhotosLoaded] = useState(false);
@@ -34,7 +33,6 @@ function Home() {
           <SwipePhotos />
           <About />
           <WhyUs />
-          <Tutor />
           <SwipeVideos />
           <Footer />
         </>
