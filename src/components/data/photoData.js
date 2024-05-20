@@ -17,11 +17,30 @@ import photo16 from "../../assets/images/photos/photo16.jpg";
 import photo17 from "../../assets/images/photos/photo17.jpg";
 import photo18 from "../../assets/images/photos/photo18.jpg";
 import photo19 from "../../assets/images/photos/photo19.jpg";
-import photo20 from "../../assets/images/photos/photo20.jpg";
+import photo20 from "../../assets/images/photos/photo25.jpg";
 import photo21 from "../../assets/images/photos/photo21.jpg";
 import photo22 from "../../assets/images/photos/photo22.jpg";
 import photo23 from "../../assets/images/photos/photo23.jpg";
 import photo24 from "../../assets/images/photos/photo24.jpg";
+import photo26 from "../../assets/images/photos/photo26.jpg";
+import photo27 from "../../assets/images/photos/photo27.jpg";
+import photo28 from "../../assets/images/photos/photo28.jpg";
+import photo29 from "../../assets/images/photos/photo29.jpg";
+import photo30 from "../../assets/images/photos/photo30.jpg";
+import photo31 from "../../assets/images/photos/photo31.jpg";
+import photo32 from "../../assets/images/photos/photo32.jpg";
+import photo33 from "../../assets/images/photos/photo33.jpg";
+import photo34 from "../../assets/images/photos/photo34.jpg";
+import photo35 from "../../assets/images/photos/photo35.jpg";
+import photo36 from "../../assets/images/photos/photo36.jpg";
+import photo37 from "../../assets/images/photos/photo37.jpg";
+import photo38 from "../../assets/images/photos/photo38.jpg";
+import photo39 from "../../assets/images/photos/photo39.jpg";
+import photo40 from "../../assets/images/photos/photo40.jpg";
+import photo41 from "../../assets/images/photos/photo41.jpg";
+import photo42 from "../../assets/images/photos/photo42.jpg";
+import photo43 from "../../assets/images/photos/photo43.jpg";
+import photo44 from "../../assets/images/photos/photo44.jpg";
 
 const photos = [
   photo1,
@@ -48,6 +67,25 @@ const photos = [
   photo22,
   photo23,
   photo24,
+  photo26,
+  photo27,
+  photo28,
+  photo29,
+  photo30,
+  photo31,
+  photo32,
+  photo33,
+  photo34,
+  photo35,
+  photo36,
+  photo37,
+  photo38,
+  photo39,
+  photo40,
+  photo41,
+  photo42,
+  photo43,
+  photo44,
 ];
 
 function loadPhotos() {
