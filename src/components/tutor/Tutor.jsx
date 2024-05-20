@@ -1,7 +1,50 @@
+import { useEffect, useRef } from "react";
 import bg from "../../assets/images/bg-tutor.svg";
 import "./tutor.css";
 
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
 function Tutor() {
+  const myElementRefs = useRef([]);
+
+  // Fungsi untuk menambah kelas 'show' jika elemen berada di viewport
+  const showElementsOnScroll = () => {
+    myElementRefs.current.forEach((el) => {
+      if (isElementInViewport(el)) {
+        el.classList.add("show");
+      }
+    });
+  };
+
+  useEffect(() => {
+    // Menambahkan event listener untuk scroll
+    window.addEventListener("scroll", showElementsOnScroll);
+
+    // Menjalankan fungsi saat komponen dimuat
+    showElementsOnScroll();
+
+    // Membersihkan event listener saat komponen di-unmount
+    return () => {
+      window.removeEventListener("scroll", showElementsOnScroll);
+    };
+  }, []);
+
+  // Mengambil referensi untuk setiap elemen dengan kelas 'myElement'
+  const setRefs = (el) => {
+    if (el && !myElementRefs.current.includes(el)) {
+      myElementRefs.current.push(el);
+    }
+  };
+
   const data1 = [
     {
       no: "1",
@@ -45,7 +88,10 @@ function Tutor() {
           <div className="flex flex-row sm:grid md:grid">
             <div className="tutor-content basis-1/2 sm:basis-full md:basis-full flex lg:justify-end xl:justify-end 2xl:justify-end 3xl:justify-end 4xl:justify-end w-[45vw]">
               <div>
-                <h1 className="tutor-title text-2xl font-bold pb-1 relative pt-2 pl-6 sm:pl-2 mb-[2rem] sm:mb-[0rem]">
+                <h1
+                  ref={setRefs}
+                  className="myElement tutor-title text-2xl font-bold pb-1 relative pt-2 pl-6 sm:pl-2 mb-[2rem] sm:mb-[0rem]"
+                >
                   Cara Order
                 </h1>
                 <div className="flex">
@@ -55,7 +101,8 @@ function Tutor() {
                       style={{
                         marginTop: item.mt,
                       }}
-                      className="h-[12rem] w-[12rem] lg:h-[11rem] lg:w-[11rem] sm:h-[8rem] sm:w-[8rem]"
+                      ref={setRefs}
+                      className="myElement h-[12rem] w-[12rem] lg:h-[11rem] lg:w-[11rem] sm:h-[8rem] sm:w-[8rem]"
                     >
                       <div>
                         <img
@@ -83,7 +130,8 @@ function Tutor() {
                       style={{
                         marginTop: item.mt,
                       }}
-                      className="h-[12rem] w-[12rem] lg:h-[11rem] lg:w-[11rem] sm:h-[8rem] sm:w-[8rem]"
+                      ref={setRefs}
+                      className="myElement h-[12rem] w-[12rem] lg:h-[11rem] lg:w-[11rem] sm:h-[8rem] sm:w-[8rem]"
                     >
                       <div>
                         <img
@@ -100,7 +148,10 @@ function Tutor() {
                     </div>
                   ))}
                 </div>
-                <div className="pb-1 flex justify-end mt-12 sm:mt-6 md:mt-8">
+                <div
+                  ref={setRefs}
+                  className="myElement pb-1 flex justify-end mt-12 sm:mt-6 md:mt-8 sm:px-4"
+                >
                   <div>
                     <h1 className="text-xl sm:text-lg font-bold flex justify-center">
                       Selamat berwisata !

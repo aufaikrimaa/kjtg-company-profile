@@ -4,22 +4,71 @@ import dataPacks from "../data/packsData";
 import jeepIcon from "../../assets/images/jeep-icon.svg";
 import "./packs.css";
 import { MessageCircleMore } from "lucide-react";
+import { useEffect, useRef } from "react";
+
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
 
 function PacksComp() {
   const handleClick = () => {
     window.open("whatsapp://send?phone=6281311211914", "_blank");
   };
 
+  const myElementRefs = useRef([]);
+
+  // Fungsi untuk menambah kelas 'show' jika elemen berada di viewport
+  const showElementsOnScroll = () => {
+    myElementRefs.current.forEach((el) => {
+      if (isElementInViewport(el)) {
+        el.classList.add("show");
+      }
+    });
+  };
+
+  useEffect(() => {
+    // Menambahkan event listener untuk scroll
+    window.addEventListener("scroll", showElementsOnScroll);
+
+    // Menjalankan fungsi saat komponen dimuat
+    showElementsOnScroll();
+
+    // Membersihkan event listener saat komponen di-unmount
+    return () => {
+      window.removeEventListener("scroll", showElementsOnScroll);
+    };
+  }, []);
+
+  // Mengambil referensi untuk setiap elemen dengan kelas 'myElement'
+  const setRefs = (el) => {
+    if (el && !myElementRefs.current.includes(el)) {
+      myElementRefs.current.push(el);
+    }
+  };
+
   return (
     <>
       <div className="px-4 packs text-white pb-6 3xl:pb-24">
         <div className="pb-2">
-          <h1 className="packs-title text-2xl flex justify-center font-bold mb-4 pb-1 relative">
+          <h1
+            ref={setRefs}
+            className="myElement packs-title text-2xl flex justify-center font-bold mb-4 pb-1 relative"
+          >
             Paket Wisata
           </h1>
         </div>
         <div className="flex justify-center mb-2">
-          <div className="text-center italic text-sm sm:text-[0.5rem]">
+          <div
+            ref={setRefs}
+            className="myElement text-center italic text-sm sm:text-[0.5rem]"
+          >
             <div>
               Note : Harga paket tidak termasuk tiket masuk kawasan wisata
               pemandian Cipanas
@@ -41,19 +90,24 @@ function PacksComp() {
                   <img
                     src={data.photo}
                     alt={data.title}
-                    className="w-full h-full object-cover"
+                    ref={setRefs}
+                    className="myElement w-full h-full object-cover"
                   />
                   <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-b from-transparent to-[#0f0f0f]"></div>
                 </div>
                 <div className="">
                   <div className="flex justify-center font-bold text-sm h-[5rem] px-1">
                     <div
-                      className="text-center"
+                      ref={setRefs}
+                      className="myElement text-center"
                       dangerouslySetInnerHTML={{ __html: data.title }}
                     />
                   </div>
                   <div className="flex justify-center px-3">
-                    <div className="self-center text-xs  w-full">
+                    <div
+                      ref={setRefs}
+                      className="myElement self-center text-xs  w-full"
+                    >
                       <div className="text-sm mb-2">Fasilitas:</div>
                       {data.fasilitas.map((item, index) => (
                         <div key={index} className="">
@@ -91,12 +145,16 @@ function PacksComp() {
                   </div>
                 </div>
                 <div className="mt-auto p-4">
-                  <div className="text-lg font-bold text-center mb-2">
+                  <div
+                    ref={setRefs}
+                    className="myElement text-lg font-bold text-center mb-2"
+                  >
                     {data.price}
                   </div>
                   <div
                     onClick={handleClick}
-                    className="flex justify-center border-2 border-white rounded-full px-2 cursor-pointer hover:bg-white hover:text-[#FFAA00] font-bold transition-colors duration-300 ease-in-out transition-background-color duration-300 ease-in-out"
+                    ref={setRefs}
+                    className="myElement flex justify-center border-2 border-white rounded-full px-2 cursor-pointer hover:bg-white hover:text-[#FFAA00] font-bold transition-colors duration-300 ease-in-out transition-background-color duration-300 ease-in-out"
                   >
                     <MessageCircleMore className="h-3 mr-0.1 self-center" />
                     Pesan Sekarang

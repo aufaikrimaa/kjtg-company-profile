@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import loadPhotos from "../data/photoData";
 import "./gallery-photos.css";
 import { Button } from "@/components/ui/button";
@@ -11,6 +11,17 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
 
 function GalleryPhotos() {
   const [loaded, setLoaded] = useState(false);
@@ -26,17 +37,51 @@ function GalleryPhotos() {
       });
   }, []);
 
+  const myElementRefs = useRef([]);
+
+  // Fungsi untuk menambah kelas 'show' jika elemen berada di viewport
+  const showElementsOnScroll = () => {
+    myElementRefs.current.forEach((el) => {
+      if (isElementInViewport(el)) {
+        el.classList.add("show");
+      }
+    });
+  };
+
+  useEffect(() => {
+    // Menambahkan event listener untuk scroll
+    window.addEventListener("scroll", showElementsOnScroll);
+
+    // Menjalankan fungsi saat komponen dimuat
+    showElementsOnScroll();
+
+    // Membersihkan event listener saat komponen di-unmount
+    return () => {
+      window.removeEventListener("scroll", showElementsOnScroll);
+    };
+  }, []);
+
+  // Mengambil referensi untuk setiap elemen dengan kelas 'myElement'
+  const setRefs = (el) => {
+    if (el && !myElementRefs.current.includes(el)) {
+      myElementRefs.current.push(el);
+    }
+  };
+
   return (
     <>
       <div className="gallery-photos text-white">
         <div className="mx-[2rem] sm:mx-0">
-          <h1 className="gphotos-title text-2xl sm:text-lg flex justify-center font-bold mb-4 pb-1 relative">
+          <h1
+            ref={setRefs}
+            className="myElement gphotos-title text-2xl sm:text-lg flex justify-center font-bold mb-4 pb-1 relative"
+          >
             Galeri Foto
           </h1>
           <div className="flex flex-wrap justify-center pb-10">
             {loaded &&
               photos.map((img, index) => (
-                <div key={index} className="">
+                <div key={index}>
                   <Dialog>
                     <DialogTrigger>
                       <img
