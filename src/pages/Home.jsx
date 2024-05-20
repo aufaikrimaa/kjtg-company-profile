@@ -8,6 +8,7 @@ import SwipeVideos from "../components/swipe-videos/SwipeVideos";
 import WhatsApp from "../components/whatsapp-icon/WhatsappIcon";
 import WhyUs from "../components/why-us/WhyUs";
 import loadPhotos from "../components/data/photoData";
+import Loading from "../components/loading/Loading";
 
 function Home() {
   const [photosLoaded, setPhotosLoaded] = useState(false);
@@ -36,7 +37,7 @@ function Home() {
           <Footer />
         </>
       ) : (
-        "loading"
+        <Loading />
       )}
     </>
   );

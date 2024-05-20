@@ -6,6 +6,7 @@ import HeaderBackground from "../components/header-background/HeaderBackground";
 import Navbar from "../components/navbar/Navbar";
 import WhatsApp from "../components/whatsapp-icon/WhatsappIcon";
 import loadPhotos from "../components/data/photoData";
+import Loading from "../components/loading/Loading";
 
 function Gallery() {
   const [photosLoaded, setPhotosLoaded] = useState(false);
@@ -21,7 +22,7 @@ function Gallery() {
   return (
     <>
       {photosLoaded === false ? (
-        <>loading</>
+        <Loading />
       ) : (
         <>
           <Navbar />

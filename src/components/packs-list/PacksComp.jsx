@@ -12,7 +12,7 @@ function PacksComp() {
 
   return (
     <>
-      <div className="px-2 packs text-white pb-6 3xl:pb-24">
+      <div className="px-4 packs text-white pb-6 3xl:pb-24">
         <div className="pb-2">
           <h1 className="packs-title text-2xl flex justify-center font-bold mb-4 pb-1 relative">
             Paket Wisata
@@ -36,7 +36,7 @@ function PacksComp() {
               key={index}
               className="packs-item border m-3 rounded-lg  transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-103  hover:shadow-[#ffaa00] duration-300 hover:shadow-[-5px_5px_10px_rgba(255,105,135,0.3)]"
             >
-              <div className="h-[48rem] w-[25rem] sm:w-[22rem] flex flex-col">
+              <div className="h-[48rem] w-[18rem] sm:w-auto flex flex-col">
                 <div className="relative rounded-lg overflow-hidden">
                   <img
                     src={data.photo}
@@ -46,7 +46,7 @@ function PacksComp() {
                   <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-b from-transparent to-[#0f0f0f]"></div>
                 </div>
                 <div className="">
-                  <div className="flex justify-center font-bold text-sm h-[4rem] px-1">
+                  <div className="flex justify-center font-bold text-sm h-[5rem] px-1">
                     <div
                       className="text-center"
                       dangerouslySetInnerHTML={{ __html: data.title }}

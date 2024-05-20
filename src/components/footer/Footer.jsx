@@ -77,7 +77,9 @@ function Footer() {
                 </div>
                 {/* <div className="mt-2">
                   <h2 className="text-sm sm:text-xs font-bold mb-0.5">Email</h2>
-                  <p className="text-xs sm:text-[0.5rem]">info@kjtg.com</p>
+                  <p className="text-xs sm:text-[0.5rem]">
+                    komunitasjeeptourgalunggung@gmail.com
+                  </p>
                 </div> */}
               </div>
             </div>
