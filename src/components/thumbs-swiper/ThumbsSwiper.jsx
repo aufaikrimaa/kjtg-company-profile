@@ -24,7 +24,7 @@ function ThumbsSwiper() {
   const data = [
     {
       title: "Harga terjangkau",
-      desc: "Menawarkan harga yang terjangkau untuk berbagai kebutuhan Anda.",
+      desc: "Menawarkan pilihan terbaik dengan harga terjangkau sesuai kebutuhan Anda.",
       icon: price,
     },
     {
@@ -49,7 +49,7 @@ function ThumbsSwiper() {
     },
     {
       title: "Asuransi",
-      desc: "Menyediakan asuransi untuk keamanan dan ketenangan hati Anda dalam setiap transaksi.",
+      desc: "Menyediakan fasilitas Asuransi untuk keamanan dan ketenangan anda selama kegiatan bersama kami.",
       icon: shield,
     },
   ];

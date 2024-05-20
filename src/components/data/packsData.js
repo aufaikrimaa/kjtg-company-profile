@@ -49,14 +49,20 @@
 //   },
 // ];
 
+import photo1 from "../../assets/images/photos/photo1.jpg";
+import photo2 from "../../assets/images/photos/photo2.jpg";
+import photo3 from "../../assets/images/photos/photo3.jpg";
+import photo4 from "../../assets/images/photos/photo5.jpg";
+
 const paket = [
   {
-    title: "PAKET FUN OFFROAD KOTA -PASIRDATAR-CIPANAS",
+    photo: photo2,
+    title: "PAKET FUN OFFROAD<br />KOTA - PASIRDATAR - CIPANAS",
     price: "Rp. 900,000,-/Jeep",
     fasilitas: [
       "Jeep 4x4 kapasitas 4 orang (Driver, BBM, Parkir)",
       {
-        title: "Free tiket",
+        title: "Free tiket:",
         items: ["✓ Pasirdatar", "✓ Curug cikahuripan", "✓ Pemandian Cipanas"],
       },
       "Fun Offroad area basah (area tambang pasir)",
@@ -70,13 +76,15 @@ const paket = [
     ],
   },
   {
-    title: "PAKET FUN OFFROAD (+) OUTBOND ACTIVITY KOTA -PASIRDATAR-CIPANAS",
+    photo: photo1,
+    title:
+      "PAKET FUN OFFROAD (+) OUTBOND ACTIVITY<br />KOTA - PASIRDATAR - CIPANAS",
     price: "Rp. 1,200,000,-/Jeep",
     fasilitas: [
       "Minimal peserta 5 Jeep atau 20 orang",
       "Jeep 4x4 kapasitas 4 orang (Driver, BBM, Parkir)",
       {
-        title: "Free tiket",
+        title: "Free tiket:",
         items: ["✓ Pasirdatar", "✓ Curug cikahuripan", "✓ Pemandian Cipanas"],
       },
       "Fun Offroad area basah (area tambang pasir)",
@@ -92,12 +100,13 @@ const paket = [
     ],
   },
   {
-    title: "PAKET FUN OFFROAD KOTA-KAWAH -PASIRDATAR-CIPANAS",
+    photo: photo3,
+    title: "PAKET FUN OFFROAD<br />KOTA - KAWAH - PASIRDATAR - CIPANAS",
     price: "Rp. 1,300,000,-/Jeep",
     fasilitas: [
       "Jeep 4x4 kapasitas 4 orang (Driver, BBM, Parkir)",
       {
-        title: "Free tiket",
+        title: "Free tiket:",
         items: [
           "✓ Kawah Galunggung",
           "✓ Pasirdatar",
@@ -117,12 +126,13 @@ const paket = [
     ],
   },
   {
-    title: "PAKET FUN OFFROAD TRIP SHORT CIPANAS - PASIRDATAR",
+    photo: photo4,
+    title: "PAKET FUN OFFROAD TRIP SHORT<br /> CIPANAS - PASIRDATAR",
     price: "Rp. 450,000,-/Jeep",
     fasilitas: [
       "Jeep 4x4 kapasitas 4 orang (Driver, BBM, Parkir)",
       {
-        title: "Free tiket",
+        title: "Free tiket:",
         items: ["✓ Pasirdatar", "✓ Curug cikahuripan"],
       },
       "Fun Offroad area basah (area tambang pasir)",
