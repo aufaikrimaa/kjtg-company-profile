@@ -27,7 +27,7 @@ function Footer() {
 
   return (
     <>
-      <div className="footer h-[40vh] lg:h-[50vh] md:h-[25vh] sm:h-[16rem] md:h-[20rem]">
+      <div className="footer h-[40vh] lg:h-[50vh] md:h-[25vh] sm:h-[12rem] md:h-[20rem]">
         <div className="flex flex row px-24 py-6 lg:px-20 md:px-16 sm:px-4 sm:py-3 3xl:py-12">
           <div className="basis-1/3 flex justify-center self-center">
             <div>
