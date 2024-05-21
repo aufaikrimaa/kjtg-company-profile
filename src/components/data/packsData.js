@@ -49,7 +49,7 @@
 //   },
 // ];
 
-import photo1 from "../../assets/images/photos/photo26.jpg";
+import photo1 from "../../assets/images/photos/photo29.jpg";
 import photo2 from "../../assets/images/photos/photo2.jpg";
 import photo3 from "../../assets/images/photos/photo25.jpg";
 import photo4 from "../../assets/images/photos/photo5.jpg";

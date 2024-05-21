@@ -9,6 +9,7 @@ import WhatsApp from "../components/whatsapp-icon/WhatsappIcon";
 import WhyUs from "../components/why-us/WhyUs";
 import loadPhotos from "../components/data/photoData";
 import Loading from "../components/loading/Loading";
+import Contact from "@/components/contact/Contact";
 
 function Home() {
   const [photosLoaded, setPhotosLoaded] = useState(false);
@@ -34,6 +35,7 @@ function Home() {
           <About />
           <WhyUs />
           <SwipeVideos />
+          <Contact />
           <Footer />
         </>
       ) : (

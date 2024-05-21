@@ -54,7 +54,7 @@ export default function SwipeVideos() {
   };
   return (
     <>
-      <div className="videos text-white px-16 sm:px-6 md:px-12 pt-12 sm:pt-6 h-[90vh] lg:h-[100vh] md:h-[44rem] sm:h-[26rem]">
+      <div className="videos text-white px-16 sm:px-6 md:px-12 pt-12 sm:pt-6 h-[80vh] lg:h-[100vh] md:h-[44rem] sm:h-[26rem]">
         <div className="mb-8 lg:mb-6 sm:mb-4 md:mb-6">
           <h1
             ref={setRefs}
