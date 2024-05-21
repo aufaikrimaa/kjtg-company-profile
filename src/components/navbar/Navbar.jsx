@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { ListCollapse } from "lucide-react";
 import {
   Popover,
   PopoverContent,
@@ -57,17 +58,7 @@ function Navbar() {
         <div className="sm:block md:block hidden self-center z-40">
           <Popover>
             <PopoverTrigger className="flex items-center px-2 py-1 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
-              <svg
-                className="fill-current h-3 w-3 "
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M2 5a1 1 0 011-1h14a1 1 0 110 2H3a1 1 0 01-1-1zM3 9a1 1 0 100 2h14a1 1 0 100-2H3zm16 4a1 1 0 110 2H3a1 1 0 110-2h16z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <ListCollapse />
             </PopoverTrigger>
             <PopoverContent className=" bg-[#0f0f0f] border-none">
               <div className="self-center text-white md:text-base sm:text-sm font-semibold pl-2 md:grid sm:grid md:gap-y-3 sm:gap-y-3 justify-items-center">
