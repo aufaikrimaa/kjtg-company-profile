@@ -26,6 +26,9 @@ function isElementInViewport(el) {
 function GalleryPhotos() {
   const [loaded, setLoaded] = useState(false);
   const [photos, setPhotos] = useState([]);
+
+  const myElementRefs = useRef([]);
+
   useEffect(() => {
     loadPhotos()
       .then((loadedPhotos) => {
@@ -36,17 +39,6 @@ function GalleryPhotos() {
         console.error("Terjadi kesalahan saat memuat foto:", error);
       });
   }, []);
-
-  const myElementRefs = useRef([]);
-
-  // Fungsi untuk menambah kelas 'show' jika elemen berada di viewport
-  const showElementsOnScroll = () => {
-    myElementRefs.current.forEach((el) => {
-      if (isElementInViewport(el)) {
-        el.classList.add("show");
-      }
-    });
-  };
 
   useEffect(() => {
     // Menambahkan event listener untuk scroll
@@ -61,6 +53,14 @@ function GalleryPhotos() {
     };
   }, []);
 
+  // Fungsi untuk menambah kelas 'show' jika elemen berada di viewport
+  const showElementsOnScroll = () => {
+    myElementRefs.current.forEach((el) => {
+      if (isElementInViewport(el)) {
+        el.classList.add("show");
+      }
+    });
+  };
   // Mengambil referensi untuk setiap elemen dengan kelas 'myElement'
   const setRefs = (el) => {
     if (el && !myElementRefs.current.includes(el)) {
