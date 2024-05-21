@@ -88,12 +88,12 @@ function Tutor() {
           <div className="flex flex-row sm:grid md:grid">
             <div className="tutor-content basis-1/2 sm:basis-full md:basis-full flex lg:justify-end xl:justify-end 2xl:justify-end 3xl:justify-end 4xl:justify-end w-[45vw]">
               <div>
-                <h1
+                <div
                   ref={setRefs}
-                  className="myElement tutor-title text-2xl font-bold pb-1 relative pt-2 pl-6 sm:pl-2 mb-[2rem] sm:mb-[0rem]"
+                  className="myElement tutor-title text-2xl font-bold pb-1 relative pt-2 pl-6 sm:pl-2 mb-[2rem] sm:mb-[0rem] sm:text-xl"
                 >
                   Cara Order
-                </h1>
+                </div>
                 <div className="flex">
                   {data1.map((item, index) => (
                     <div
@@ -153,9 +153,9 @@ function Tutor() {
                   className="myElement pb-1 flex justify-end mt-12 sm:mt-6 md:mt-8 sm:px-4"
                 >
                   <div>
-                    <h1 className="text-xl sm:text-lg font-bold flex justify-center">
+                    <div className="text-xl sm:text-lg font-bold flex justify-center">
                       Selamat berwisata !
-                    </h1>
+                    </div>
                     <p className="sm:text-sm flex sm:justify-center sm:text-center md:justify-center md:text-center">
                       Ayo have fun bareng Komunitas Jeep Tour Galunggung !
                     </p>

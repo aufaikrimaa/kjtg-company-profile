@@ -49,12 +49,12 @@ function GalleryVideos() {
     <>
       <div className="gallery-videos text-white">
         <div className="mx-[2rem]">
-          <h1
+          <div
             ref={setRefs}
             className="myElement gvideos-title text-2xl sm:text-lg flex justify-center font-bold mb-4 pb-1 relative"
           >
             Galeri Video
-          </h1>
+          </div>
           <div className="flex flex-wrap justify-center pb-10">
             {videos.map((item, index) => (
               <div

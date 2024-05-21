@@ -72,12 +72,12 @@ function GalleryPhotos() {
     <>
       <div className="gallery-photos text-white">
         <div className="mx-[2rem] sm:mx-0">
-          <h1
+          <div
             ref={setRefs}
             className="myElement gphotos-title text-2xl sm:text-lg flex justify-center font-bold mb-4 pb-1 relative"
           >
             Galeri Foto
-          </h1>
+          </div>
           <div className="flex flex-wrap justify-center pb-10">
             {loaded &&
               photos.map((img, index) => (

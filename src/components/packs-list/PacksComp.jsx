@@ -57,12 +57,12 @@ function PacksComp() {
     <>
       <div className="px-4 packs text-white pb-6 3xl:pb-24">
         <div className="pb-2">
-          <h1
+          <div
             ref={setRefs}
-            className="myElement packs-title text-2xl flex justify-center font-bold mb-4 pb-1 relative"
+            className="myElement packs-title text-2xl flex justify-center font-bold mb-4 pb-1 relative sm:text-xl"
           >
             Paket Wisata
-          </h1>
+          </div>
         </div>
         <div className="flex justify-center mb-2">
           <div

@@ -47,12 +47,12 @@ function About() {
     <>
       <div className="about flex py-20 justify-center h-[30vh] xl:h-[60vh] lg:h-[65vh] sm:h-[26rem] md:h-[28rem]">
         <div className="container self-center text-white px-16 lg:px-0 md:px-4 sm:px-4">
-          <h1
+          <div
             ref={setRefs}
             className="myElement about-title text-2xl sm:text-lg flex justify-center font-bold mb-4 pb-1 relative"
           >
             Tentang Komunitas
-          </h1>
+          </div>
           <div className=" text-center text-sm sm:text-[0.65rem] sm:leading-tight md:leading-snug">
             <div ref={setRefs} className="myElement mb-2">
               <p>
