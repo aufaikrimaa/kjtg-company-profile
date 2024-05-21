@@ -60,10 +60,8 @@ function Contact() {
   return (
     <div className="px-16 sm:px-4 bg-[#0f0f0f] h-[40rem] sm:h-[44rem] grid content-center">
       <div className="text-white">
-        <h1
-          ref={setRefs}
-          className="myElement contact-title text-2xl sm:text-lg flex justify-center font-bold mb-4 pb-1 relative"
-        >
+        <div ref={setRefs} className="myElement"></div>
+        <h1 className="contact-title text-2xl sm:text-lg flex justify-center font-bold mb-4 pb-1 relative">
           Kontak kami
         </h1>
         <div className="flex mt-6 md:grid sm:grid px-2">
@@ -87,8 +85,10 @@ function Contact() {
                   window.open(data.link, "_blank");
                 }}
               >
-                <div className="font-bold text-lg">{data.title}</div>
-                <div className="text-sm">{data.name}</div>
+                <div className="font-bold text-lg sm:text-base">
+                  {data.title}
+                </div>
+                <div className="text-sm sm:text-xs">{data.name}</div>
               </div>
             ))}
           </div>
