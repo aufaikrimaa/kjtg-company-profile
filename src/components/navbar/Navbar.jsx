@@ -57,8 +57,8 @@ function Navbar() {
         </div>
         <div className="sm:block md:block hidden self-center z-40">
           <Popover>
-            <PopoverTrigger className="flex items-center px-2 py-1 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
-              <ListCollapse />
+            <PopoverTrigger className="flex items-center px-2 py-1 border rounded border-gray-400  hover:border-white">
+              <ListCollapse className="text-gray-200 hover:text-white h-3.5 w-auto" />
             </PopoverTrigger>
             <PopoverContent className=" bg-[#0f0f0f] border-none">
               <div className="self-center text-white md:text-base sm:text-sm font-semibold pl-2 md:grid sm:grid md:gap-y-3 sm:gap-y-3 justify-items-center">
