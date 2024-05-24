@@ -19,7 +19,7 @@ function isElementInViewport(el) {
 
 function PacksComp() {
   const handleClick = () => {
-    window.open("whatsapp://send?phone=6281311211914", "_blank");
+    window.open("whatsapp://send?phone=6281224284181", "_blank");
   };
 
   const myElementRefs = useRef([]);

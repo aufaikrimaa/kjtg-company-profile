@@ -52,8 +52,8 @@ function Contact() {
     },
     {
       title: "WhatsApp",
-      name: "+62 813-1121-1914",
-      link: "whatsapp://send?phone=6281311211914",
+      name: "+62 812-2428-4181",
+      link: "whatsapp://send?phone=6281224284181",
     },
     { title: "Telepon", name: "+62 813-1121-1914", link: "tel:+6281311211914" },
   ];

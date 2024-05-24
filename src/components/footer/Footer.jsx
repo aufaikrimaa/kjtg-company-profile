@@ -67,13 +67,13 @@ function Footer() {
                   <h2 className="text-sm sm:text-xs font-bold mb-0.5">
                     Telp & SMS
                   </h2>
-                  <p className="text-xs sm:text-[0.5rem]">+62 813-1121-1914</p>
+                  <p className="text-xs sm:text-[0.5rem]">+62 812-2428-4181</p>
                 </div>
                 <div className="mt-2">
                   <h2 className="text-sm sm:text-xs font-bold mb-0.5">
                     WhatsApp
                   </h2>
-                  <p className="text-xs sm:text-[0.5rem]">+62 813-1121-1914</p>
+                  <p className="text-xs sm:text-[0.5rem]">+62 812-2428-4181</p>
                 </div>
                 {/* <div className="mt-2">
                   <h2 className="text-sm sm:text-xs font-bold mb-0.5">Email</h2>
