@@ -3,7 +3,7 @@ import whatsapp from "../../assets/images/whatsapp.svg";
 
 function WhatsApp() {
   const handleClick = () => {
-    window.open("whatsapp://send?phone=6281224284181", "_blank");
+    window.open("whatsapp://send?phone=6281779817666", "_blank");
   };
 
   return (

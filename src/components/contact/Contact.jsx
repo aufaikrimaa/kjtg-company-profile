@@ -52,10 +52,14 @@ function Contact() {
     },
     {
       title: "WhatsApp",
-      name: "+62 812-2428-4181",
-      link: "whatsapp://send?phone=6281224284181",
+      name: "+62-817-7981-7666",
+      link: "whatsapp://send?phone=6281779817666",
     },
-    { title: "Telepon", name: "+62 813-1121-1914", link: "tel:+6281311211914" },
+    {
+      title: "Telepon",
+      name: "+62-817-7981-7666",
+      link: "tel:+6281779817666",
+    },
   ];
   return (
     <div className="px-16 sm:px-4 bg-[#0f0f0f] h-[40rem] sm:h-[44rem] grid content-center">

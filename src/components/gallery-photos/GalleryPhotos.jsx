@@ -43,6 +43,7 @@ function GalleryPhotos() {
                       <img
                         src={img}
                         alt={`image ${index}`}
+                        loading="lazy"
                         crossOrigin="anonymous"
                         className="w-24 m-2 sm:w-12 sm:m-0.5 md:w-20 sm:m-1 rounded-md"
                         allowFullScreen
