@@ -71,8 +71,8 @@ function About() {
                 mendapatkan pengalaman berkendara yang sebenarnya dan penuh
                 tantangan. Dengan jejak roda 4x4 yang seluruhnya, kami menjamin
                 adrenalin tinggi dan petualangan sejati di setiap perjalanan.
-                Bergabunglah dengan kami dan rasakan sensasi menaiki jeep di
-                medan yang menantang dengan pemandangan alam Galunggung yang
+                Bergabunglah dengan kami dan rasakan sensasi offroad di medan
+                yang menantang dengan pemandangan alam Galunggung yang
                 menakjubkan. Ayo jelajahi keindahan alam dan budaya lokal dengan
                 gaya petualangan yang sesungguhnya! Ikuti kami di media sosial
                 kami untuk mendapatkan informasi lebih lanjut tentang paket

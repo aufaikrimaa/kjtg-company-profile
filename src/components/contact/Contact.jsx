@@ -75,7 +75,7 @@ function Contact() {
             className="myElement basis-2/3 md:basis-none sm:basis-none flex justify-center"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.768315673794!2d108.0972759!3d-7.267185899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f53d9197c25d1%3A0xbc6f602e7865725!2sPOSKO%20Komunitas%20Jeep%20Tour%20Galunggung!5e0!3m2!1sen!2sid!4v1716255741886!5m2!1sen!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.069713821678!2d108.184115175881!3d-7.346068772268841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f56e3a6190f7d%3A0xf13d361369c9e17a!2sHotel%20Taman%20Mangkubumi%20Indah!5e0!3m2!1sen!2sid!4v1717151023968!5m2!1sen!2sid"
               loading="lazy"
               className="rounded-lg h-full w-5/6 md:w-full sm:w-full"
             />

@@ -96,13 +96,13 @@ function Footer() {
                   className="text-white text-xs sm:text-[0.5rem] cursor-pointer"
                   onClick={() => {
                     window.open(
-                      "https://www.google.com/maps/place/POSKO+Komunitas+Jeep+Tour+Galunggung/@-7.2671806,108.094701,17z/data=!3m1!4b1!4m6!3m5!1s0x2e6f53d9197c25d1:0xbc6f602e7865725!8m2!3d-7.2671859!4d108.0972759!16s%2Fg%2F11vpnpnwsg?authuser=0&entry=ttu",
+                      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.069713821678!2d108.184115175881!3d-7.346068772268841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f56e3a6190f7d%3A0xf13d361369c9e17a!2sHotel%20Taman%20Mangkubumi%20Indah!5e0!3m2!1sen!2sid!4v1717151023968!5m2!1sen!2sid",
                       "_blank"
                     );
                   }}
                 >
-                  📍 Jalan Ah Nasution No.km 7, Linggajati, Kec. Sukaratu,
-                  Kabupaten Tasikmalaya, Jawa Barat 46181
+                  📍 Jl. AH Nasution No.KM 7, Mangkubumi, Kec. Mangkubumi, Kab.
+                  Tasikmalaya, Jawa Barat 46181
                 </p>
               </div>
             </div>

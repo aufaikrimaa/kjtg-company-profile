@@ -69,14 +69,11 @@ function PacksComp() {
             ref={setRefs}
             className="myElement text-center italic text-sm sm:text-[0.5rem]"
           >
-            <div>
-              Note : Harga paket tidak termasuk tiket masuk kawasan wisata
-              pemandian Cipanas
-            </div>
-            <div>
+            <div>Note : Max 7 jam (jam 17.00 sudah di titik penjemputan )</div>
+            {/* <div>
               mintalah bukti pembayaran tiket pada saat pembayaran di pos
               Cipanas
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="flex flex-wrap justify-center">

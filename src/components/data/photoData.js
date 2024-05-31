@@ -2,11 +2,9 @@ import photo1 from "../../assets/images/photos/photo1.jpg";
 import photo2 from "../../assets/images/photos/photo2.jpg";
 import photo3 from "../../assets/images/photos/photo3.jpg";
 import photo4 from "../../assets/images/photos/photo4.jpg";
-import photo5 from "../../assets/images/photos/photo5.jpg";
 import photo6 from "../../assets/images/photos/photo6.jpg";
 import photo7 from "../../assets/images/photos/photo7.jpg";
 import photo8 from "../../assets/images/photos/photo8.jpg";
-import photo9 from "../../assets/images/photos/photo9.jpg";
 import photo10 from "../../assets/images/photos/photo10.jpg";
 import photo11 from "../../assets/images/photos/photo11.jpg";
 import photo12 from "../../assets/images/photos/photo12.jpg";
@@ -39,7 +37,6 @@ import photo39 from "../../assets/images/photos/photo39.jpg";
 import photo40 from "../../assets/images/photos/photo40.jpg";
 import photo41 from "../../assets/images/photos/photo41.jpg";
 import photo42 from "../../assets/images/photos/photo42.jpg";
-import photo43 from "../../assets/images/photos/photo43.jpg";
 import photo44 from "../../assets/images/photos/photo44.jpg";
 
 const photos = [
@@ -47,11 +44,9 @@ const photos = [
   photo2,
   photo3,
   photo4,
-  photo5,
   photo6,
   photo7,
   photo8,
-  photo9,
   photo10,
   photo11,
   photo12,
@@ -84,7 +79,6 @@ const photos = [
   photo40,
   photo41,
   photo42,
-  photo43,
   photo44,
 ];
 
