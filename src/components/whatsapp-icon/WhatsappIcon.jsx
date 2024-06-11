@@ -1,10 +1,13 @@
 import "./whatsappIcon.css";
 import whatsapp from "../../assets/images/whatsapp.svg";
+import { number } from "../phoneNumber/phoneNum";
 
 function WhatsApp() {
   const handleClick = () => {
-    window.open("whatsapp://send?phone=6281779817666", "_blank");
+    window.open(`whatsapp://send?phone=${number}`, "_blank");
   };
+
+  // console.log(number);
 
   return (
     <>

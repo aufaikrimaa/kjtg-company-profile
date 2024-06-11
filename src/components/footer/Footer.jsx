@@ -4,6 +4,7 @@ import youtube from "../../assets/images/youtube.svg";
 import tiktok from "../../assets/images/tiktok.svg";
 import instagram from "../../assets/images/instagram.svg";
 import facebook from "../../assets/images/facebook.svg";
+import { number } from "../phoneNumber/phoneNum";
 
 function Footer() {
   const sosmedData = [
@@ -67,13 +68,13 @@ function Footer() {
                   <h2 className="text-sm sm:text-xs font-bold mb-0.5">
                     Telp & SMS
                   </h2>
-                  <p className="text-xs sm:text-[0.5rem]">+62-817-7981-7666</p>
+                  <p className="text-xs sm:text-[0.5rem]">+{number}</p>
                 </div>
                 <div className="mt-2">
                   <h2 className="text-sm sm:text-xs font-bold mb-0.5">
                     WhatsApp
                   </h2>
-                  <p className="text-xs sm:text-[0.5rem]">+62-817-7981-7666</p>
+                  <p className="text-xs sm:text-[0.5rem]">+{number}</p>
                 </div>
                 {/* <div className="mt-2">
                   <h2 className="text-sm sm:text-xs font-bold mb-0.5">Email</h2>

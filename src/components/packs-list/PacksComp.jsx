@@ -5,6 +5,7 @@ import jeepIcon from "../../assets/images/jeep-icon.svg";
 import "./packs.css";
 import { MessageCircleMore } from "lucide-react";
 import { useEffect, useRef } from "react";
+import { number } from "../phoneNumber/phoneNum";
 
 function isElementInViewport(el) {
   const rect = el.getBoundingClientRect();
@@ -19,7 +20,7 @@ function isElementInViewport(el) {
 
 function PacksComp() {
   const handleClick = () => {
-    window.open("whatsapp://send?phone=6281779817666", "_blank");
+    window.open(`whatsapp://send?phone=${number}`, "_blank");
   };
 
   const myElementRefs = useRef([]);

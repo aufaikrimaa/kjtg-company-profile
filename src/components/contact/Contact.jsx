@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { number } from "../phoneNumber/phoneNum";
 import "./contact.css";
 
 function isElementInViewport(el) {
@@ -52,13 +53,13 @@ function Contact() {
     },
     {
       title: "WhatsApp",
-      name: "+62-817-7981-7666",
-      link: "whatsapp://send?phone=6281779817666",
+      name: "+" + number,
+      link: `whatsapp://send?phone=${number}`,
     },
     {
       title: "Telepon",
-      name: "+62-817-7981-7666",
-      link: "tel:+6281779817666",
+      name: "+" + number,
+      link: `tel:+${number}`,
     },
   ];
   return (
