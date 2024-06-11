@@ -6,7 +6,6 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import logo from "../../assets/images/logo-galunggung.png";
 import "./navbar.css";
 
 function Navbar() {
@@ -45,7 +44,7 @@ function Navbar() {
           <Link to="/">
             <div className="flex ">
               <img
-                src={logo}
+                src="https://kjtg-images.vercel.app/images/logo-galunggung.png"
                 alt=""
                 className="w-8 h-auto lg:w-6 md:w-6 sm:w-6"
               />

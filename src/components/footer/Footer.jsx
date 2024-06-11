@@ -1,5 +1,4 @@
 import "./footer.css";
-import logo from "../../assets/images/logo-galunggung.png";
 import youtube from "../../assets/images/youtube.svg";
 import tiktok from "../../assets/images/tiktok.svg";
 import instagram from "../../assets/images/instagram.svg";
@@ -33,7 +32,10 @@ function Footer() {
           <div className="basis-1/3 flex justify-center self-center">
             <div>
               <div className="flex text-white">
-                <img src={logo} className="h-8 sm:h-5" />
+                <img
+                  src="https://kjtg-images.vercel.app/images/logo-galunggung.png"
+                  className="h-8 sm:h-5"
+                />
                 <p className="self-center font-bold text-2xl sm:text-base ml-2">
                   K J T G
                 </p>

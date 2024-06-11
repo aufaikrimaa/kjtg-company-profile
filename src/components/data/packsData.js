@@ -49,14 +49,9 @@
 //   },
 // ];
 
-import photo1 from "../../assets/images/photos/photo29.jpg";
-import photo2 from "../../assets/images/photos/photo2.jpg";
-import photo3 from "../../assets/images/photos/photo25.jpg";
-import photo4 from "../../assets/images/photos/photo6.jpg";
-
 const paket = [
   {
-    photo: photo2,
+    photo: "https://kjtg-images.vercel.app/images/photo2.jpg",
     title: "PAKET FUN OFFROAD<br />KOTA - PASIRDATAR - CIPANAS",
     price: "Rp. 900,000,-/Jeep",
     fasilitas: [
@@ -76,7 +71,7 @@ const paket = [
     ],
   },
   {
-    photo: photo1,
+    photo: "https://kjtg-images.vercel.app/images/photo29.jpg",
     title:
       "PAKET FUN OFFROAD (+) OUTBOND ACTIVITY<br />KOTA - PASIRDATAR - CIPANAS",
     price: "Rp. 1,200,000,-/Jeep",
@@ -100,7 +95,7 @@ const paket = [
     ],
   },
   {
-    photo: photo3,
+    photo: "https://kjtg-images.vercel.app/images/photo25.jpg",
     title: "PAKET FUN OFFROAD<br />KOTA - KAWAH - PASIRDATAR - CIPANAS",
     price: "Rp. 1,300,000,-/Jeep",
     fasilitas: [
@@ -126,7 +121,7 @@ const paket = [
     ],
   },
   {
-    photo: photo4,
+    photo: "https://kjtg-images.vercel.app/images/photo6.jpg",
     title: "PAKET FUN OFFROAD TRIP SHORT<br /> CIPANAS - PASIRDATAR",
     price: "Rp. 450,000,-/Jeep",
     fasilitas: [
