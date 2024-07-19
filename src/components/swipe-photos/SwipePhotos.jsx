@@ -54,39 +54,37 @@ function SwipePhotos() {
   };
 
   return (
-    <>
-      <div className="photos flex pt-10 lg:pt-4 md:pt-1 sm:pt-0 px-8 md:px-6 sm:px-4 h-[30rem] md:h-[16rem] sm:h-[8rem]">
-        <Swiper
-          modules={[Autoplay]}
-          autoplay={{ delay: 2000 }}
-          speed={1000}
-          grabCursor={true}
-          loop={true}
-          className="swiper-photo self-center"
-          onSlideChange={handleSlideOnChange}
-          breakpoints={{
-            300: {
-              slidesPerView: 3,
-            },
-            1100: {
-              slidesPerView: 5,
-            },
-          }}
-        >
-          {loaded &&
-            photos.map((img, index) => (
-              <SwiperSlide key={index} className="swiper-slide-photos">
-                <img
-                  src={img}
-                  alt={`image ${index}`}
-                  className="img-swipe rounded-md"
-                  crossOrigin="anonymous"
-                />
-              </SwiperSlide>
-            ))}
-        </Swiper>
-      </div>
-    </>
+    <div className="photos flex pt-10 lg:pt-4 md:pt-1 sm:pt-0 px-8 md:px-6 sm:px-4 h-[30rem] md:h-[16rem] sm:h-[8rem]">
+      <Swiper
+        modules={[Autoplay]}
+        autoplay={{ delay: 2000 }}
+        speed={1000}
+        grabCursor={true}
+        loop={true}
+        className="swiper-photo self-center"
+        onSlideChange={handleSlideOnChange}
+        breakpoints={{
+          300: {
+            slidesPerView: 3,
+          },
+          1100: {
+            slidesPerView: 5,
+          },
+        }}
+      >
+        {loaded &&
+          photos.map((img, index) => (
+            <SwiperSlide key={index} className="swiper-slide-photos">
+              <img
+                src={img}
+                alt={`image ${index}`}
+                className="img-swipe rounded-md"
+                crossOrigin="anonymous"
+              />
+            </SwiperSlide>
+          ))}
+      </Swiper>
+    </div>
   );
 }
 

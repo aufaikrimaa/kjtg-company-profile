@@ -59,33 +59,31 @@ function WhyUs() {
     }
   };
   return (
-    <>
-      <div className="whyus flex sm:w-[100vw] px-16 pt-10 sm:pt-4 md:pt-4 sm:px-4 md:px-20 h-[90vh] sm:h-[22rem] md:h-[28rem] sm:justify-center md:justify-center">
-        <div className="text-white self-center sm:w-[100vw]">
-          <div ref={setRefs} className="myElement">
-            <div className="whyus-title text-2xl flex justify-center font-bold pb-1 relative sm:text-lg">
-              Mengapa KJTG ?
-            </div>
+    <div className="whyus flex sm:w-[100vw] px-16 pt-10 sm:pt-4 md:pt-4 sm:px-4 md:px-20 h-[90vh] sm:h-[22rem] md:h-[28rem] sm:justify-center md:justify-center">
+      <div className="text-white self-center sm:w-[100vw]">
+        <div ref={setRefs} className="myElement">
+          <div className="whyus-title text-2xl flex justify-center font-bold pb-1 relative sm:text-lg">
+            Mengapa KJTG ?
           </div>
-          <div className="flex flex-row lg:pt-0 2xl:pt-0 h-[32rem] lg:h-[26rem] sm:h-[16rem] md:h-[22rem]">
-            <div className="basis-2/5 flex justify-center self-center sm:hidden md:hidden">
-              <img
-                src={photos[4]}
-                alt="photo"
-                className="myElement photo-whyus rounded-md"
-                crossOrigin="anonymous"
-                ref={setRefs}
-              />
-            </div>
-            <div className="basis-3/5 sm:basis-0 flex justify-center">
-              <div ref={setRefs} className="myElement self-center">
-                <ThumbsSwiper />
-              </div>
+        </div>
+        <div className="flex flex-row lg:pt-0 2xl:pt-0 h-[32rem] lg:h-[26rem] sm:h-[16rem] md:h-[22rem]">
+          <div className="basis-2/5 flex justify-center self-center sm:hidden md:hidden">
+            <img
+              src={photos[4]}
+              alt="photo"
+              className="myElement photo-whyus rounded-md"
+              crossOrigin="anonymous"
+              ref={setRefs}
+            />
+          </div>
+          <div className="basis-3/5 sm:basis-0 flex justify-center">
+            <div ref={setRefs} className="myElement self-center">
+              <ThumbsSwiper />
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 export default WhyUs;

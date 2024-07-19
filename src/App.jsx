@@ -5,15 +5,13 @@ import Gallery from "./pages/Gallery";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/packs" element={<Packs />} />
-          <Route path="/gallery" element={<Gallery />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/packs" element={<Packs />} />
+        <Route path="/gallery" element={<Gallery />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -46,46 +46,44 @@ function GalleryVideos() {
     }
   };
   return (
-    <>
-      <div className="gallery-videos text-white">
-        <div className="mx-[2rem]">
-          <div
-            ref={setRefs}
-            className="myElement gvideos-title text-2xl sm:text-lg flex justify-center font-bold mb-4 pb-1 relative"
-          >
-            Galeri Video
-          </div>
-          <div className="flex flex-wrap justify-center pb-10">
-            {videos.map((item, index) => (
-              <div
-                key={index}
-                ref={setRefs}
-                className="myElement relative m-2 sm:m-1"
-              >
-                <img
-                  src={item.cover}
-                  alt={`image ${index}`}
-                  crossOrigin="anonymous"
-                  className="cover-videos w-24 sm:w-12 md:w-20 rounded-md"
-                  onClick={() => {
-                    window.open(item.link, "_blank");
-                  }}
-                />
-                <div className="overlay absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 transition-opacity duration-300">
-                  <a href={item.link} target="_blank" rel="noopener noreferrer">
-                    <img
-                      src={instagram}
-                      alt="Instagram Icon"
-                      className="instagram-icon rounded-xl"
-                    />
-                  </a>
-                </div>
+    <div className="gallery-videos text-white">
+      <div className="mx-[2rem]">
+        <div
+          ref={setRefs}
+          className="myElement gvideos-title text-2xl sm:text-lg flex justify-center font-bold mb-4 pb-1 relative"
+        >
+          Galeri Video
+        </div>
+        <div className="flex flex-wrap justify-center pb-10">
+          {videos.map((item, index) => (
+            <div
+              key={index}
+              ref={setRefs}
+              className="myElement relative m-2 sm:m-1"
+            >
+              <img
+                src={item.cover}
+                alt={`image ${index}`}
+                crossOrigin="anonymous"
+                className="cover-videos w-24 sm:w-12 md:w-20 rounded-md"
+                onClick={() => {
+                  window.open(item.link, "_blank");
+                }}
+              />
+              <div className="overlay absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 transition-opacity duration-300">
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={instagram}
+                    alt="Instagram Icon"
+                    className="instagram-icon rounded-xl"
+                  />
+                </a>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 export default GalleryVideos;
